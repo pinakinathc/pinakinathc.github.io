@@ -25,7 +25,7 @@ i am super excited to travel, meet new people, learn a thing or two about their 
 ### few extra links if you want to know more
 * [teams with whome i have worked before]()
 * [list of projects i love and want to contribute]()
-* [my resume]() | [raw version]()
+* [my resume]() [raw version]()
 * [my blogs]()
 
 ### small bio.
