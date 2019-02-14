@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+My `now` page. Inspired by [this](https://sivers.org/nowff).
 
 [Link to another page](./another-page.html).
 
@@ -105,11 +105,11 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>Pinaki Nath Chowdhury</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>1995</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>Durgapur, West Bengal, India, Earth</dd>
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
