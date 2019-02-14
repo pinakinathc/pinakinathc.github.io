@@ -2,7 +2,7 @@
 layout: default
 ---
 
-my `now` page. inspired by [this](https://sivers.org/nowff).
+my [`now`](./now.html) page. inspired by [this](https://sivers.org/nowff).
 
 ### who am i?
 
@@ -17,13 +17,13 @@ i am super excited to travel, meet new people, learn a thing or two about their 
 * DAV Model School, Durgapur [My High School]
 * Kalyani Government Engineering College, Kalyani (not far from Durgapur) [My undergrad college]
 
-### me research interests
+### my research interests
 * Deep Learning
 * Computer Vision
 * Statistical Learning Theory
 
 ### few extra links if you want to know more
-* [teams with whome i have worked before]()
+* [teams with whom i have worked before]()
 * [list of projects i love and want to contribute]()
 * [my resume]() [raw version]()
 * [my blogs]()
