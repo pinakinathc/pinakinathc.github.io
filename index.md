@@ -8,7 +8,7 @@ my [`now`](./now.html) page. inspired by [this](https://sivers.org/nowff).
 
 i am 23 years old living in india and love to think of new ideas and test them.
 
-i am super excited to travel, meet new people, learn a thing or two about their culture.
+i love to travel, meet new people, learn a thing or two about their culture.
 
 
 ### my educational background
