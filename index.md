@@ -2,106 +2,33 @@
 layout: default
 ---
 
-My `now` page. Inspired by [this](https://sivers.org/nowff).
+my `now` page. inspired by [this](https://sivers.org/nowff).
 
-[Link to another page](./another-page.html).
+### who am i?
 
-There should be whitespace between paragraphs.
+i am 23 years old living in india and love to think of new ideas and test them.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+i am super excited to travel, meet new people, learn a thing or two about their culture.
 
 
-### Definition lists can be used with HTML syntax.
+### my educational background
+
+>> St. Xavier's School, Durgapur [My School]
+>> DAV Model School, Durgapur [My High School]
+>> Kalyani Government Engineering College, Kalyani (not far from Durgapur :p) [My undergrad college]
+
+### me research interests
+>> Deep Learning
+>> Computer Vision
+>> Statistical Learning Theory
+
+### few extra links if you want to know more
+>> [teams with whome i have worked before]()
+>> [list of projects i love and want to contribute]()
+>> [my resume]() | [raw version]()
+>> [my blogs]()
+
+### small bio.
 
 <dl>
 <dt>Name</dt>
@@ -111,13 +38,9 @@ end
 <dt>Birthplace</dt>
 <dd>Durgapur, West Bengal, India, Earth</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd>Pink and Green and Blue</dd>
 </dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
+thanks to github for this nice theme.
 ```
