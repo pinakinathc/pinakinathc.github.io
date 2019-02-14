@@ -13,20 +13,20 @@ i am super excited to travel, meet new people, learn a thing or two about their 
 
 ### my educational background
 
->> St. Xavier's School, Durgapur [My School]
->> DAV Model School, Durgapur [My High School]
->> Kalyani Government Engineering College, Kalyani (not far from Durgapur :p) [My undergrad college]
+* St. Xavier's School, Durgapur [My School]
+* DAV Model School, Durgapur [My High School]
+* Kalyani Government Engineering College, Kalyani (not far from Durgapur) [My undergrad college]
 
 ### me research interests
->> Deep Learning
->> Computer Vision
->> Statistical Learning Theory
+* Deep Learning
+* Computer Vision
+* Statistical Learning Theory
 
 ### few extra links if you want to know more
->> [teams with whome i have worked before]()
->> [list of projects i love and want to contribute]()
->> [my resume]() | [raw version]()
->> [my blogs]()
+* [teams with whome i have worked before]()
+* [list of projects i love and want to contribute]()
+* [my resume]() | [raw version]()
+* [my blogs]()
 
 ### small bio.
 
