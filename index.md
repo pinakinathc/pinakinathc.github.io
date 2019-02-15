@@ -23,10 +23,10 @@ i love to travel, meet new people, learn a thing or two about their culture.
 * Statistical Learning Theory
 
 ### few extra links if you want to know more
-* [teams with whom i have worked before]()
+* [teams with whom i have worked before](./empty.html)
 * [list of projects i love and want to contribute](./project_list)
-* [my resume]() [raw version]()
-* [my blogs]()
+* [my resume](./empty.html) [raw version](./empty.html)
+* [my blogs](./empty.html)
 
 ### small bio.
 
@@ -42,5 +42,5 @@ i love to travel, meet new people, learn a thing or two about their culture.
 </dl>
 
 ```
-thanks to github for this nice theme.
+thanks to jekyll and github for this nice theme.
 ```
