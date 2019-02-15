@@ -1,5 +1,5 @@
 ---
-layout
+layout: default
 ---
 
 ### these are the list of project that i follow & love & want to contribute (but not necessarily an active conrtibutor yet)
