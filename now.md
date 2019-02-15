@@ -9,7 +9,7 @@ layout: default
 
 ***
 
-i try to read research papers published in cvpr, nips, iclr and icml. i am also trying to increase the boundary of my knowledge of deep learning and the statistics. but to be honest, i rarely get any understanding of those in iclr or icml.
+i try to read research papers published in cvpr, nips, iclr and icml. i am also trying to increase the boundary of my knowledge of deep learning and statistics. but to be honest, i rarely understand of those published in iclr or icml.
 
 i need to complete my current projects fast. i am increasingly wasting time in youtube and facebook. this might be because it all starts with waiting for my programs to complete or i am too depressed to work for the next few minutes.
 
