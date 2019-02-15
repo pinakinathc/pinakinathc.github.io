@@ -9,3 +9,6 @@ layout
 * [`arch linux`](https://www.archlinux.org/)
 * [`scikit-learn`](https://github.com/scikit-learn/scikit-learn)
 * [`pytorch`](https://github.com/pytorch/pytorch)
+
+***
+[back](./)
