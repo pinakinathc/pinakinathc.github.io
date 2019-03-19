@@ -2,13 +2,15 @@
 layout: default
 ---
 
-my [`now`](./now.html) page. inspired by [this](https://sivers.org/nowff).
+my [`now`](./now) page. inspired by [this](https://sivers.org/nowff).
 
 ### who am i?
 
 i am 23 years old living in india and love to think of new ideas and test them.
 
 i love to travel, meet new people, learn a thing or two about their culture.
+
+i am currently living in kolkata, india. i like discussing new ideas specially machine learning. [let's catch up over coffee](https://calendly.com/pinakinathc)
 
 
 ### my educational background
@@ -23,10 +25,10 @@ i love to travel, meet new people, learn a thing or two about their culture.
 * Statistical Learning Theory
 
 ### few extra links if you want to know more
-* [teams with whom i have worked before](./empty.html)
+* [teams with whom i have worked before](./empty)
 * [list of projects i love and want to contribute](./project_list)
-* [my resume](./empty.html) [raw version](./empty.html)
-* [my blogs](./empty.html)
+* [my resume](./empty) [raw version](./empty)
+* [my blogs](./empty)
 
 ### small bio.
 
