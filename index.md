@@ -46,3 +46,4 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 ```
 thanks to jekyll and github for this nice theme.
 ```
+[![alt_text](http://clustrmaps.com/map_v2.png?d=lmmxAGNwfYu_JnB6Js75pIzHwuWPVzUuih6lS6kQgg8&cl=ffffff)](https://clustrmaps.com/site/1apbh)
