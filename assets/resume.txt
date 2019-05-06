@@ -1,0 +1,101 @@
+# My Resume
+=====================================================================================================
+## Personal Details:
+> Name: Pinaki Nath Chowdhury
+> Current Job Title: Project Linked Person (aka. Research Assistant)
+> Institution/Organization: Indian Statistical Institute, Kolkata
+
+## Contact Details:
+> Email Id: pinakinathc@gmail.com
+> Phone (M): +91 7432814640
+> Website: http://www.pinakinathc.me
+
+## My current work
+------------------------------------
+> I work in Computer Vision where my research interest are mainly text detection and text recognition,
+  in the wild and handwritten. With help of my guides, Prof. Umapada Pal and Prof. P. Shivakumara,
+  I was able to solve some problems and hoping to solve some more. (Shall update more about this later).
+
+## Institutes/Organizations that I have previously worked with:
+------------------------------------------------------------------------------------------------------
+> Central Drug Research Institute, Lucknow (a CSIR Lab)
+  >> During my time here, I worked with Dr. Sukant Khurana helping in
+     crawling information from various News websites in India and South-EAST Asia
+     and understanding awareness of various diseases and several other social aspects.
+> Oxygen Technologies Sdn Bhd, Malaysia
+  >> Oxygen Technologies is a startup in Malaysia and I was involved in building a POC
+     where hospital forms could be scanned and understood by a computer, thereby reducing
+     time and also storing information digitally.
+> MyAnatomy Ventures, Bangalore
+  >> MyAnatomy is a startup in bangalore aiming to provide placement opportunities to all
+     sudents in Indian colleges. I was the Full Stack Developer for MyAnatomy (MERN stack).
+     During my stay, I fixed several bugs, developed 2 micro-services; 1 for payment and another
+     for a new services to customers. Though I was a Full Stack Developer, I mainly developed
+     the backend, optimized the code to reduce latency etc. In frontend, I only fixed bugs
+     which were notorious and difficult to debug.
+> EduGorilla Community Pvt. Ltd, Lucknow
+  >> EduGorilla is a EdTech startup originally founded in Lucknow. I worked here during 2016
+     for nearly 6 months. During my stay here, I would crawl large amounts of information,
+     optimize the code which used to validate the large information that we had and figure out ways
+     to reduce latency by using multi-threads (as there were some APIs involved in the process).
+     Today EduGorilla is one of the most successful EdTechs in India (thanks to Mr. Mangalik)
+
+## Some organizations where I worked for short time:
+------------------------------------------------------------------------------------------------------
+> Egnify Technologies, Hyderabad
+  >> Egnify is a startup in Hyderabad whose main goal is how to help school students to score more
+     by providing a detailed analysis of their performance and where they are lacking
+     (i.e. Learning Analytics). Egnify has won several awards and has been in news quite a number
+     of times. I was hired as a Full Stack Developer where my work was primarily to develop their
+     QMS but during my short stay all I could do is use GraphQL to connect the various microservices
+     and also the base structure of QMS (but I did not develop QMS).
+> Technolosol, Bangladesh
+  >> While in 3rd year semester break, I did an Android course where Mr. Arnab Charkaborty asked me
+     to help build an application to track service cars in Bangladesh and send the information to an ERP.
+     I helped in the planning stage, providing solutions and also agreed to lead a team of young
+     developers to build the android application.
+
+## My Bachelor Thesis
+------------------------------------------------------------------------------------------------------
+> Shapes can tell us a lot of intresting properties of Nature. Just think, what would be the shape
+  of a water bubble in outer space? (it is spherical. But why?)
+  My goal was NOT to answer why (that I left to the community :p), I wanted to know "which is the most
+  common shape in this Universe?"
+
+  >> Now, I couldn't solve this problem totally, but came up with some tricks to get an experimental
+     proof of my idea. I wrote a crawller to download some x-ray images of supernova from places like
+     Chandra X-Ray Observatory etc. We knew that our small collected data has more number of Type-1
+     Supernova. (We just needed our algorithms to understand it). We developed a variant of K-Means
+     algorithm (basically using K-Means to understand the shape based on temperature of Gas Clouds).
+     Invented an idea of Similarity Matrix (but humans had developed this concept long ago). Then we
+     needed to represent this information present in high dimension into 2D plane for humans to "see" it.
+     So we used embedding techniques like PCA, t-SNE and hierarchical clustering for visualisation.
+     Luckily, our algorithm did say that Type-1 Supernova was the most common one (phew!!).
+
+## My Education
+-----------------------------------------------------------------------------------------------------
+>> St. Xavier's School  (Durgapur) [School]
+>> D.A.V. Modern School (Durgapur) [High Scool]
+>> Kalyani Government Engineering College, Kalyani  (not far from Durgapur) [Undergrad College]
+
+## Some small achievements
+-----------------------------------------------------------------------------------------------------
+>> WBJEE (West Bengal Joint Entrance Examination) 2014 Rank: 960 (out of 100,000)
+   for admission to Engineering Colleges in West Bengal
+>> CodeChef Snackdown 2017 Rank: 729 (Got eliminated in the quater Finals)
+>> Google CodeJam 2018 Rank: 6367 (every year I solve 3 to 3.5 problems in Qualifying Rounds only to
+   get eliminated in the next)
+
+## Some little Technical Skills:
+-------------------------------------------------
+>> Programming Language: Python(2&3), JavaScript, C/C++, Shell, Octave/Matlab
+>> Frameworks/Library: Tensorflow, PyTorch, Keras, Scikit-Learn, NodeJS, ReactJS, Redux, Scrappy, GraphQL.
+>> Database: MongoDB, Google Datastore, MySQL
+
+## References
+-------------------------------------
+>> Prof. Umapada Pal (Head CVPR Unit, Indian Statistical Institute, Kolkata)
+>> Prof. P. Shivakumara (University of Malaya)
+>> Asst. Prof. Kousik Dasgupta (Kalyani Government Engineering College)
+>> Dr. Sukant Khuranna (Scientist, Central Drug Research Institute, Lucknow)
+>> Mr. Rohit Mangalik (ex-Oracle and Founder of EduGorilla)
