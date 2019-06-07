@@ -3,6 +3,7 @@ layout: default
 ---
 
 my [`now`](./now) page. inspired by [this](https://sivers.org/nowff).
+[`check the story of my life`](https://stackoverflow.com/story/story_of_my_life)
 
 ### who am i?
 
