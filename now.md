@@ -7,6 +7,8 @@ layout: default
 > i want to utilise my time properly and put it up here online
 > this will not only help me analyse whether i am wasting time or not; but also let others know what i am doing and why i am not responding to calls or emails.
 
+Click [`Here`](https://nownownow.com/p/UG7K) to visit my page at https://www.nownownow.com
+
 ***
 
 i try to read research papers published in cvpr, nips, iclr and icml. i am also trying to increase the boundary of my knowledge of deep learning and statistics. but to be honest, i rarely understand those published in iclr or icml.
