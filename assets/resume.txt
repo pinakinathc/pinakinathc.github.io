@@ -94,8 +94,4 @@
 
 ## References
 -------------------------------------
->> Prof. Umapada Pal (Head CVPR Unit, Indian Statistical Institute, Kolkata)
->> Prof. P. Shivakumara (University of Malaya)
->> Asst. Prof. Kousik Dasgupta (Kalyani Government Engineering College)
->> Dr. Sukant Khuranna (Scientist, Central Drug Research Institute, Lucknow)
->> Mr. Rohit Mangalik (ex-Oracle and Founder of EduGorilla)
+available on request
