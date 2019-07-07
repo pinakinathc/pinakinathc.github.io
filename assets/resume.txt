@@ -50,7 +50,7 @@
      QMS but during my short stay all I could do is use GraphQL to connect the various microservices
      and also the base structure of QMS (but I did not develop QMS).
 > Technolosol, Bangladesh
-  >> While in 3rd year semester break, I did an Android course where Mr. Arnab Charkaborty asked me
+  >> While in 3rd year semester break, I did an Android course where I met Mr. Arnab Charkaborty who later asked me
      to help build an application to track service cars in Bangladesh and send the information to an ERP.
      I helped in the planning stage, providing solutions and also agreed to lead a team of young
      developers to build the android application.
