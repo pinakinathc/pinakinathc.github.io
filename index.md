@@ -22,7 +22,6 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 * Bachelor of Computer Science and Engineering from Kalyani Government Engineering College, Kalyani (not far from Durgapur) [My undergrad college]
 
 ### my research interests
-* Deep Learning
 * Computer Vision
 * Machine Learning
 
