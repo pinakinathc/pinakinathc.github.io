@@ -11,4 +11,4 @@ layout: default
 * [`pytorch`](https://github.com/pytorch/pytorch)
 
 ***
-[back](./)
+[back](https://www.pinakinathc.me)
