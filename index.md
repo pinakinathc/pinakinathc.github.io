@@ -19,7 +19,7 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 
 * St. Xavier's School, Durgapur [My School]
 * DAV Model School, Durgapur [My High School]
-* Kalyani Government Engineering College, Kalyani (not far from Durgapur) [My undergrad college]
+* Bachelor of Computer Science and Engineering from Kalyani Government Engineering College, Kalyani (not far from Durgapur) [My undergrad college]
 
 ### my research interests
 * Deep Learning
@@ -27,10 +27,11 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 * Machine Learning
 
 ### few extra links if you want to know more
-* [teams with whom i have worked before](./empty)
+* [teams with whom i have worked before](./data/my_teams)
 * [list of projects i love and want to contribute](./data/project_list)
 * [my resume](https://github.com/pinakinathc/pinakinathc.github.io/blob/master/data/resume.txt) [view raw version](https://raw.githubusercontent.com/pinakinathc/pinakinathc.github.io/master/data/resume.txt)
-* [my blogs](./empty)
+* [my blogs](./data/blog_home)
+* [my publications](./data/list_of_publications)
 
 ### small bio.
 
