@@ -28,8 +28,8 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 
 ### few extra links if you want to know more
 * [teams with whom i have worked before](./empty)
-* [list of projects i love and want to contribute](./project_list)
-* [my resume](https://github.com/pinakinathc/pinakinathc.github.io/blob/master/assets/resume.txt) [view raw version](https://raw.githubusercontent.com/pinakinathc/pinakinathc.github.io/master/assets/resume.txt)
+* [list of projects i love and want to contribute](./data/project_list)
+* [my resume](https://github.com/pinakinathc/pinakinathc.github.io/blob/master/data/resume.txt) [view raw version](https://raw.githubusercontent.com/pinakinathc/pinakinathc.github.io/master/data/resume.txt)
 * [my blogs](./empty)
 
 ### small bio.
