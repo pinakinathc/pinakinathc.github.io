@@ -24,7 +24,7 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 ### my research interests
 * Deep Learning
 * Computer Vision
-* Statistical Learning Theory
+* Machine Learning
 
 ### few extra links if you want to know more
 * [teams with whom i have worked before](./empty)
