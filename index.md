@@ -43,6 +43,8 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 <dd>Durgapur, West Bengal, India, Earth</dd>
 <dt>Color</dt>
 <dd>Pink and Green and Blue</dd>
+<dt>Contace Me!!</dt>
+<dd>Email: pinakinathc@gmail.com | WeChat: +91 7432814640 | [Facebook Messenger](https://www.facebook.com/pinakinath.chowdhury)</dd>
 </dl>
 
 ```
