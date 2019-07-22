@@ -44,9 +44,8 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 <dt>Color</dt>
 <dd>Pink and Green and Blue</dd>
 <dt>Contace Me!!</dt>
-<dd>Email: pinakinathc@gmail.com | WeChat: +91 7432814640 | [Facebook Messenger](https://www.facebook.com/pinakinath.chowdhury)</dd>
+<dd>Email: pinakinathc@gmail.com | WeChat: +91 7432814640 | <a href="https://www.facebook.com/pinakinath.chowdhury">Facebook Messenger</a></dd>
 </dl>
-
 ```
 thanks to jekyll and github for this nice theme.
 ```
