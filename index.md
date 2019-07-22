@@ -48,4 +48,7 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 ```
 thanks to jekyll and github for this nice theme.
 ```
+[![Free Hit Counters](https://www.easycounter.com/counter.php?pinakinathc)](https://www.easycounter.com/) hits since June 22nd 2019 (thanks Kaiming He, found this in your website)
+<!--
 [![alt_text](http://clustrmaps.com/map_v2.png?d=lmmxAGNwfYu_JnB6Js75pIzHwuWPVzUuih6lS6kQgg8&cl=ffffff)](https://clustrmaps.com/site/1apbh)
+-->
