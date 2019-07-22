@@ -36,7 +36,7 @@ i am currently living in kolkata, india. i like discussing new ideas specially m
 
 <dl>
 <dt>Name</dt>
-<dd>Pinaki Nath Chowdhury</dd>
+<dd>Pinaki Nath Chowdhury | পিনাকী নাথ চৌধুরী</dd>
 <dt>Born</dt>
 <dd>1995</dd>
 <dt>Birthplace</dt>
