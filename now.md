@@ -15,14 +15,19 @@ update: 2nd September 2019
 finally, after so many months my first idea got published in an international conference. and not just that, both the papers that i submitted in ACPR 2019 (1 as first author with my own idea and 2nd with another friend from china), got **ACCEPTED**. i know this isn't that big but this is my first work being published so yay!!. i still have a long way to go so, need to keep my focus and completed my projects.
 
 -------------------------------------------
+update: 7th June 2019
+
+i am getting a little out of my cocoon. updated about my life in various online profiles and the biggest: finally maybe going to use a "smart"-phone !! i believe that technology should always be used to help everyone (selflessly) but i am still not quite happy with the way consumers pay thousands of bucks to enjoy these inventions. maybe things will change and this exploitation of consumers would reduce a little
+
+----------------------------------------------------
+update: 15th February 2019
 
 i try to read research papers published in cvpr, nips, iclr and icml. i am also trying to increase the boundary of my knowledge of deep learning and statistics. but to be honest, i rarely understand those published in iclr or icml.
 
 i need to complete my current projects fast. i am increasingly wasting time in youtube and facebook. this might be because it all starts with waiting for my programs to complete or i am too depressed to work for the next few minutes.
 
-i wrote the above 2 paragraphs on 15th Feb 2019 and they are still pretty much valid (hence it is e^x in this updated version). this is a major update in my life and to all those who know me. i am getting a little out of my cocoon. updated about my life in various online profiles and the biggest: finally maybe going to use a "smart"-phone !! i believe that technology should always be used to help everyone (selflessly) but i am still not quite happy with the way consumers pay thousands of bucks to enjoy these inventions. maybe things will change and this exploitation of consumers would reduce a little
+-----------------------------------------------------
 
 ***
-last updated: 7th June 2019
 
 [back](./)
