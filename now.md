@@ -10,6 +10,11 @@ layout: default
 Click [`Here`](https://nownownow.com/p/UG7K) to visit my page at https://www.nownownow.com
 
 ***
+update: 2nd September 2019
+
+finally, after so many months my first idea got published in an international conference. and not just that, both the papers that i submitted in ACPR 2019 (1 as first author with my own idea and 2nd with another friend from china), got **ACCEPTED**. i know this isn't that big but this is my first work being published so yay!!. i still have a long way to go so, need to keep my focus and completed my projects.
+
+-------------------------------------------
 
 i try to read research papers published in cvpr, nips, iclr and icml. i am also trying to increase the boundary of my knowledge of deep learning and statistics. but to be honest, i rarely understand those published in iclr or icml.
 
