@@ -8,12 +8,11 @@ my [`now`](./now) page. inspired by [this](https://sivers.org/nowff).
 
 ### who am i?
 
-i am 23 years old living in india and love to think of new ideas and test them.
+hey welcome to the world of pinaki. if you are looking for something related to resume/CV, then head below to extra link section.
 
-i love to travel, meet new people, learn a thing or two about their culture.
+currently i am living in kolkata (India), so if you happen to drop in the city let's meet and discuss new ideas over a [cup of coffee](https://calendly.com/pinakinathc) !!
 
-i am currently living in kolkata, india. i like discussing new ideas specially machine learning. [let's catch up over coffee](https://calendly.com/pinakinathc)
-
+now some stuff about me: i am a vegetarian (it means that i do not eat chicken by simply imagining it to be paneer); i love to travel, meet new people and learn their way of living; oh and yeah...i love to think of new ideas specially how to develop algorithms doing the same tasks as an average human (some people call it artificial intelligence)
 
 ### my educational background
 
