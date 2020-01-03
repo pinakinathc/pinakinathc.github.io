@@ -4,10 +4,13 @@ title: CV
 permalink: /cv/
 ---
 
-You can find my curriculum vitae/resume below.
-<ul>
-	<li><a href="A_Customised_CurVe_CV.pdf">CV</a></li>
-<!--	<li><a href="long_cv.pdf">CV</a> (4 pages)</li>
+You can find my curriculum vitae/resume below or [download the PDF here.](A_Customised_CurVe_CV.pdf)
+
+{% include embedpdf.html code="30ah9tgxevj1vl9/svm-cv.pdf" width=100 height=800 %}
+<!-- <ul>
+	<li><a href="A_Customised_CurVe_CV.pdf">download my CV</a></li>
+	<li><a href="long_cv.pdf">CV</a> (4 pages)</li>
 	<li><a href="two_page.pdf">Long resume</a> (2 pages)</li>
-	<li><a href="short_cv.pdf">Short resume</a> (1 page)</li> -->
+	<li><a href="short_cv.pdf">Short resume</a> (1 page)</li> 
 </ul>
+ -->

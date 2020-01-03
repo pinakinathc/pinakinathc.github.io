@@ -4,7 +4,10 @@ title: Blog
 permalink: /blog/
 ---
 
-Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful! You can also search my posts by category <a href="{{ site.baseurl }}/categories/">here</a>.
+This is my new year resolution to write about works that I cook and feed it to everyone!!
+
+
+<!-- Here are my carefully compiled views on some topics that I encountered so far. Hopefully, you will find them helpful! You can also search my posts by category <a href="{{ site.baseurl }}/categories/">here</a>.
 
 <ul class="listing">
 {% for post in site.posts %}
@@ -18,4 +21,4 @@ Here are my carefully compiled views on some topics that I encountered so far. H
     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
   </li>
 {% endfor %}
-</ul>
+</ul> -->
