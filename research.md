@@ -9,6 +9,11 @@ I love working in problems related to machine learning and computer vision.
 <h2>Publications</h2>
 <ul>
 	<li>
+		<b>Modeling Extent-of-Texture Information for Ground Terrain Recognition</b><br>
+		<i>Shuvozit Ghose, <b>Pinaki Nath Chowdhury</b>, Partha Pratim Roy, Umapada Pal</i><br>
+		<a href="https://arxiv.org/abs/2004.08141"><div class="color-button">pdf</div></a> <a href="https://github.com/ShuvozitGhose/Ground-Terrain-EoT"><div class="color-button">code</div></a>
+	</li><br>
+	<li>
 		<b>A New U-Net based Enhancement Model for License Plate Detection in Night and Day Images</b><br>
 		<i><b>Pinaki Nath Chowdhury</b>, Palaiahnakote Shivakumara, Raghavendra Ramachandra, Umapada Pal, Tong Lu, and Michael Blumenstein</i><br>
 		ACPR, 2019<br>
