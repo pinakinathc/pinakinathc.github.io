@@ -17,11 +17,13 @@ I love working in problems related to machine learning and computer vision.
 		<b>A New U-Net based Enhancement Model for License Plate Detection in Night and Day Images</b><br>
 		<i><b>Pinaki Nath Chowdhury</b>, Palaiahnakote Shivakumara, Raghavendra Ramachandra, Umapada Pal, Tong Lu, and Michael Blumenstein</i><br>
 		ACPR, 2019<br>
+		<a href="https://link.springer.com/chapter/10.1007/978-3-030-41404-7_53"><div class="color-button">paper</div></a> <a href="https://github.com/pinakinathc/task_image_enhancement"><div class="color-button">code</div></a>
 	</li><br>
 	<li>
 		<b>Handwritten Numeral String Recognition for Indian Scripts</b><br>
 		<i>Hongjian Zhan, <b>Pinaki Nath Chowdhury</b>, Umapada Pal, and Yue Lu</i><br>
 		ACPR, 2019<br>
+		<a href="https://link.springer.com/chapter/10.1007/978-3-030-41299-9_21"><div class="color-button">paper</div></a>
 	</li><br>
 	<li>
 		<b>ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection and Recognition – RRC-MLT-2019</b><br>
