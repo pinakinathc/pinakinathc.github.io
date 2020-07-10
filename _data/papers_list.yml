@@ -1,0 +1,25 @@
+- title: Modeling Extent-of-Texture Information for Ground Terrain Recognition
+  authors: Shuvozit Ghose, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
+  venue: ICPR 2020
+  pdf: /assets/papers/2004.08141.pdf
+  url: https://arxiv.org/abs/2004.08141
+  code: https://github.com/ShuvozitGhose/Ground-Terrain-EoT
+
+- title: A New U-Net based Enhancement Model for License Plate Detection in Night and Day Images
+  authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Raghavendra Ramachandra, Umapada Pal, Tong Lu, and Michael Blumenstein
+  venue: ACPR 2019
+  pdf: /assets/papers/acpr_2019_lp.pdf
+  url: https://link.springer.com/chapter/10.1007/978-3-030-41404-7_53
+  code: https://github.com/pinakinathc/task_image_enhancement
+
+- title: Handwritten Numeral String Recognition for Indian Scripts
+  authors: Hongjian Zhan, Pinaki Nath Chowdhury, Umapada Pal, and Yue Lu
+  venue: ACPR 2019
+  pdf: /assets/papers/acpr_2019_digit.pdf
+  url: https://link.springer.com/chapter/10.1007/978-3-030-41299-9_21
+
+- title: ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection and Recognition – RRC-MLT-2019
+  authors: Nibal Nayef, Yash Patel, Michal Busta, Pinaki Nath Chowdhury, Dimosthenis Karatzas, Wafa Khlif, Jiri Matas, Umapada Pal, Jean-Christophe Burie, Cheng-lin Liu, Jean-Marc Ogier
+  venue: ICDAR 2019
+  pdf: assets/papers/1907.00945.pdf
+  url: https://rrc.cvc.uab.es/?ch=15

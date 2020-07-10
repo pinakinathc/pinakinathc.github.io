@@ -1,0 +1,37 @@
+---
+layout: default
+title: Research
+---
+<h2>This section provides a list of papers I have published</h2><hr>
+
+<ul>
+  {% for paper in site.data.papers_list %}
+    <li style="margin-bottom: 17px;">
+      <b> {{ paper.title }} </b><br>
+      {{ paper.authors }} <br>
+      <a href="{{ paper.pdf }}">pdf</a> <a href="{{ paper.url }}">URL</a> <a href="{{ paper.code }}">code</a> <br>
+      <b> Venue: {{ paper.venue}} </b><br>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Research Experience</h2><hr>
+<style>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+{% for exp in site.data.research_experience %}
+<div class="row">
+	<div class="column" style="float:left; width:5%"><img src="{{ exp.image }}", alt="Organization Logo", style="width: 90%;"></div>
+    <div class="column" style="float:left; float:bottom">
+	<b>{{ exp.organization }}</b><br>
+	<i>Supervisor: {{ exp.supervisor }}</i><br>
+	Position: {{ exp.job_title }}<br>
+	{{ exp.duration }}
+    </div>
+</div>
+{% endfor %}
