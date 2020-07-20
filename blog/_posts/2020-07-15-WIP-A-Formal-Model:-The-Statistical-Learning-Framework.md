@@ -4,6 +4,9 @@ comments: true
 mathjax: true
 author: pinaki
 ---
+
+this is a work in progress...please view later.
+
 Can we get some theoretical guarantees of *how successful learning can be achieved in a relatively simplified setting?*
 
 In this blog, I shall answer the aforementioned question. Before starting, I must mention that I learnt about this concept from "Understanding Machine Learning: From Theory to Algorithms" by Shai Shalev-Shwartz and Shai Ben-David, Chapter 2 page 33.
