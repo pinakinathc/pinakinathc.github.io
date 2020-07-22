@@ -66,3 +66,9 @@ Big thanks to [ultralytics](https://github.com/ultralytics/yolov5) for sharing t
 - Add authors names
 
 - Upload trained model weights
+
+### License
+
+This code is only for academic purpose. For commercial purpose, please contact: contact[at]pinakinathc.me
+
+Contact details of other authors will be updated soon.
