@@ -33,11 +33,11 @@ the proposed method is effective and better than SOTA methods.
 
 ### Block Diagram of this new method
 
-[BlockDiagram](/projects/images/Tree_Detection_block_diagram.jpg)
+[Click to view the Block Diagram](/projects/images/Tree_Detection_block_diagram.jpg)
 
 ### Network architecture of off-the-shelf YOLOv5
 
-[NetworkDiagram](/projects/images/Tree_Detection_yolov5.jpg)
+[Click to view the yolov5 Network Architecture](/projects/images/Tree_Detection_yolov5.jpg)
 
 ### Installation Instruction
 
