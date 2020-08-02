@@ -1,0 +1,352 @@
+---
+layout: post
+comments: false
+author: pinaki
+excerpt_separator: <!--more-->
+---
+<i>This is ISI Image Annotation Tool developed by the CVPR Unit team.</i><br><br>
+<!--more-->
+We do not record any data, but simply provide a script running in <b>your web-browser</b>. This code is entirely open-sourced. Feel free to check it and suggest improvements. You can also download/save this script using <pre style='display:inline'>CTRL+S</pre> for your personal use in future.
+<hr>
+
+<div style='text-align:center'>
+<h1>Welcome to ISI Image Annotation Tool</h1>
+<p> Please select the list of files you want to annotate</p>
+<input type="file" id="myFile" multiple  onchange="readMultipleImgs(this.files)"><br><br>
+
+<i>Please click the file which you want to annotate</i>
+
+<div id='show_img_list'></div><br>
+</div>
+
+<div class='btn-group' style='text-align:center'>
+        <button onclick='hardReset()'>Reset GT</button>
+        <button onclick="document.getElementById('uploadGT').click()">Upload GT</button>
+		<input type='file' id='uploadGT' onchange='uploadGTJson(this)' style='display: none'>
+	<a id='exportJSON'onclick='downloadGT(this)' class='btn'><button>Download GT from browser</button></a>
+</div>
+
+<br><br>
+
+<div class='btn-group' style='text-align:center'>
+	<button onclick='imageMax()'>Img Maximise</button>
+	<button onclick='imageMin()'>Img Minimise</button>
+</div>
+<canvas id='show_img' style="border:3px solid #c3c3c3;">Please use a web-browse supporting HTML5 i.e. some latest one like Chromium or Firefox or Chrome or Safari etc.</canvas>
+
+<div id='label_modal' class='modal' style='
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	'>
+	<div style='  background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%;'>
+		<p>Please edit your label for this GT</p>
+		<input type='text' id='label_modal_text'>
+		<span id='label_accept'><button>Accept</button></span><span id='label_cancel'><button>Cancel</button></span><span id='label_delete'><button>Delete GT</button></span>
+	</div>
+</div>
+
+<script>
+	const canvas = document.getElementById('show_img');
+	var ctx = canvas.getContext('2d');
+	var originalHeight = 17, originalWidth=17;
+	var img = new Image();
+	var savedImgFlag = false;
+	var componentFlag = false; // indicates if a gt-component is currently drawn
+	var prevPointComp = {'x':0, 'y':0}
+	var gt = {}; // stores all gt components
+	var gt_component = [];
+
+	function downloadGT(_event) {
+		var data = "text/json;charset=utf8," + encodeURIComponent(JSON.stringify(gt));
+		_event.setAttribute("href", "data:"+data);
+		_event.setAttribute("download", "isi-gt.json");
+	}
+
+	canvas.addEventListener('mousedown', function mouseDown(_event) {
+		if (editComponentLabel(_event)){
+			return;
+		}
+		if (componentFlag == false) {
+			componentFlag = true;
+		}
+		gt_component.push(getXY(_event));
+		drawAnnotation();
+	}, false);
+
+	canvas.addEventListener('mouseup', function mouseUp(_event) {
+		if (componentFlag == true && gt_component.length >= 4) {
+			label = prompt('Enter label for this GT:', '');
+			if (label != null && label != '') {
+				gt[img.id]['gt'].push(gt_component);
+				gt[img.id]['label'].push(label);
+				resetComponent();
+				drawAnnotation();
+			} else {
+				resetComponent();
+			}
+		}
+
+	}, false);
+
+	canvas.addEventListener('mousemove', function mouseMove(_event) {
+		if (componentFlag == true){
+			ctx.drawImage(img, 0, 0, img.width, img.height,
+                        	0, 0, canvas.width, canvas.height)
+
+			curr_loc = getXY(getXY(_event), mode='pull');
+			Len = gt_component.length;
+			prevPointComp = getXY(gt_component[Len-1], mode='pull');
+			prevX = prevPointComp['x']; prevY = prevPointComp['y'];
+			currX = curr_loc['x']; currY = curr_loc['y'];
+                        ctx.beginPath();
+                        ctx.moveTo(prevX, prevY);
+                        ctx.lineTo(currX, currY);
+                        ctx.strokeStyle = 'green';
+                        ctx.lineWidth = 3;
+                        ctx.stroke();
+			drawAnnotation();
+		}
+
+	}, false);
+
+	canvas.addEventListener('mouseout', function mouseOut(_event) {
+		resetComponent();
+
+	}, false);
+
+
+	function getXY(data, mode='push') {
+		if (mode == 'push') {
+			// relativeX = data.clientX - canvas.offsetLeft;
+			// relativeY = data.clientY - canvas.offsetTop;
+			relativeX = data.pageX - canvas.offsetLeft;
+			relativeY = data.pageY - canvas.offsetTop;
+			absoluteX = Math.round(relativeX*img.width/canvas.width);
+			absoluteY = Math.round(relativeY*img.height/canvas.height);
+			return {'x': absoluteX, 'y': absoluteY};
+		}
+		else if (mode == 'pull') {
+			relativeX = Math.round(data['x']*canvas.width/img.width);
+			relativeY = Math.round(data['y']*canvas.height/img.height);
+			return {'x': relativeX, 'y': relativeY};
+		}
+	}
+
+	function resetComponent() {
+		gt_component = [];
+		componentFlag = false;
+                ctx.drawImage(img, 0, 0, img.width, img.height,
+                        0, 0, canvas.width, canvas.height);
+		drawAnnotation();
+	}
+
+	function hardReset() {
+		gt[img.id]['gt'] = [];
+		resetComponent();
+	}
+
+	function editComponentLabel(_event) {
+		function insideComponent(point1, point2) {
+			x_vals = []; y_vals = [];
+			for (var i=0; i<4; i++) {
+				x_vals.push(point2[i]['x']);
+				y_vals.push(point2[i]['y']);
+			}
+			var xmin = Math.min(...x_vals), xmax = Math.max(...x_vals);
+			var ymin = Math.min(...y_vals), ymax = Math.max(...y_vals);
+			
+			var x = point1['x'], y = point1['y'];
+			if (x >= xmin && x <= xmax && y >= ymin && y <= ymax) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+                var modal = document.getElementById('label_modal');
+                var label_value = document.getElementById('label_modal_text');
+                var _accept = document.getElementById('label_accept');
+                var _cancel = document.getElementById('label_cancel');
+                var _delete = document.getElementById('label_delete');
+                
+                window.onclick = function (_event) {
+                        if (_event.target == modal) {
+                                modal.style.display = 'none';
+                        }
+                }
+
+		function getIndex(defaultValue=false) {
+			for (var i=0; i<gt[img.id]['gt'].length; i++){
+				if (insideComponent(curr_loc, gt[img.id]['gt'][i])) {
+						if (defaultValue){
+		      				label_value.value = gt[img.id]['label'][i];
+		      			}
+		      			modal.style.display = 'block';
+			      		return i;
+				}
+			}
+		        return null;
+		}
+
+		curr_loc = getXY(_event);
+		index = getIndex(defaultValue=true);
+		if (index == null) {
+		      return;
+		}
+
+		_accept.onclick = function () {
+		      index = getIndex();
+		      gt[img.id]['label'].splice(index, 1, label_value.value);
+		      modal.style.display = 'none';
+		}
+
+		_cancel.onclick = function () {
+		      modal.style.display = 'none';
+		}
+
+		_delete.onclick = function () {
+		      index = getIndex();
+		      gt[img.id]['label'].splice(index, 1);
+		      gt[img.id]['gt'].splice(index, 1);
+		      modal.style.display = 'none';
+		      resetComponent();
+		}
+	}
+
+	function drawAnnotation(clear=false) {
+		all_lines = [];
+		for (var i=0; i<gt[img.id]['gt'].length; i++) {
+			prevX = 0; prevY = 0;
+			line = [];
+			for (var j=0; j<gt[img.id]['gt'][i].length; j++) {
+				absoluteX = gt[img.id]['gt'][i][j]['x'];
+				absoluteY = gt[img.id]['gt'][i][j]['y'];
+        	                res = getXY({'x':absoluteX, 'y':absoluteY}, mode='pull')
+	                        x = res['x']; y = res['y'];
+				ctx.beginPath();
+				ctx.fillStyle = 'red';
+				ctx.fillRect(x, y, 5, 5);
+				line.push({'x': x, 'y': y});
+			}
+			all_lines.push(line);
+		}
+		line = [];
+		for (var i=0; i<gt_component.length; i++) {
+			absoluteX = gt_component[i]['x'];
+			absoluteY = gt_component[i]['y'];
+			res = getXY({'x':absoluteX, 'y':absoluteY}, mode='pull')
+			x = res['x']; y = res['y'];
+			ctx.beginPath();
+			ctx.fillStyle = 'yellow';
+			ctx.fillRect(x, y, 5, 5);
+			line.push({'x': x, 'y': y});
+		}
+		if (line.length > 0) {all_lines.push(line);}
+		// plot lines
+		for (var i=0; i<all_lines.length; i++) {
+			// considering 4 point segments
+			if (all_lines[i].length >= 4) {
+				prevX = all_lines[i][3]['x']; prevY = all_lines[i][3]['y'];
+			}
+			else {
+				prevX = all_lines[i][0]['x']; prevY = all_lines[i][0]['y'];
+			}
+			for (var j=0; j<all_lines[i].length; j++) {
+				currX = all_lines[i][j]['x'];
+				currY = all_lines[i][j]['y'];
+				ctx.beginPath();
+				ctx.moveTo(prevX, prevY);
+				ctx.lineTo(currX, currY);
+				ctx.strokeStyle = 'green';
+				ctx.lineWidth = 3;
+				ctx.stroke();
+				prevX = currX; prevY = currY;
+			}
+		}
+	}
+
+	function imageMin(){
+		currHeight = canvas.height;
+		currWidth = canvas.width;
+		newHeight = Math.round(currHeight*0.7);
+		newWidth = Math.round(currWidth*0.7);
+		canvas.width = newWidth;
+		canvas.height = newHeight;
+		ctx.drawImage(img, 0, 0, img.width, img.height,
+			0, 0, canvas.width, canvas.height);
+		drawAnnotation();
+	}
+
+        function imageMax(){
+                currHeight = canvas.height;
+                currWidth = canvas.width;
+                newHeight = Math.round(currHeight*1.7);
+                newWidth = Math.round(currWidth*1.7);
+                canvas.width = newWidth;
+                canvas.height = newHeight;
+                ctx.drawImage(img, 0, 0, img.width, img.height,
+                        0, 0, canvas.width, canvas.height);
+		drawAnnotation();
+        }
+
+
+        function imgRender(_event) {
+		var all_btns = document.getElementsByTagName('button');
+		for (var i=0; i<all_btns.length; i++) {
+			all_btns[i].style.color = 'black';
+		}
+		_event.style.color = 'red';
+		img.src = _event.value;
+		img.id = _event.id;
+		originalHeight = img.height;
+		originalWidth = img.width;
+		canvas.width = originalWidth;
+		canvas.height = originalHeight;
+		ctx.drawImage(img, 0, 0);
+		if (!(img.id in gt)) {
+			gt[img.id] = {'name': img.id, 'height': originalHeight, 'width': originalWidth, 'gt': [], 'label': []}
+		}
+		else{ gt[img.id]['height'] = originalHeight; gt[img.id]['width'] = originalWidth;
+		}
+		drawAnnotation();
+        }
+
+
+	function readMultipleImgs(files) {
+		var reader = new FileReader();
+		function readFile(file) {
+			var name = file.name;
+			var reader = new FileReader();
+			var img_section = document.getElementById('show_img_list');
+			reader.onload = function(_event) {
+				var img_element = document.createElement('button');
+				img_element.value = _event.target.result;
+				img_element.innerHTML = name;
+				img_element.id = name;
+				img_element.onclick = function() {imgRender(this)};
+				img_section.appendChild(img_element);
+			}
+			reader.readAsDataURL(file);
+		}
+		for (var i=0; i<files.length; i++) {readFile(files[i]);}
+	}
+
+	function uploadGTJson(_event) {
+		var reader = new FileReader();
+		reader.onload = function(_event) {
+			gt = JSON.parse(_event.target.result);
+			alert('Saved GT loaded !!');
+		}
+		reader.readAsText(_event.files[0]);
+	}
+
+	</script>
