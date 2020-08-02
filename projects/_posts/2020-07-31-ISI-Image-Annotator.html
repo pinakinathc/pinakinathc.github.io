@@ -17,9 +17,8 @@ We do not record any data, but simply provide a script running in <b>your web-br
 <i>Please click the file which you want to annotate</i>
 
 <div id='show_img_list'></div><br>
-</div>
 
-<div class='btn-group' style='text-align:center'>
+<div class='btn-group'>
         <button onclick='hardReset()'>Reset GT</button>
         <button onclick="document.getElementById('uploadGT').click()">Upload GT</button>
 		<input type='file' id='uploadGT' onchange='uploadGTJson(this)' style='display: none'>
@@ -28,11 +27,13 @@ We do not record any data, but simply provide a script running in <b>your web-br
 
 <br><br>
 
-<div class='btn-group' style='text-align:center'>
+<div class='btn-group'>
 	<button onclick='imageMax()'>Img Maximise</button>
 	<button onclick='imageMin()'>Img Minimise</button>
 </div>
 <canvas id='show_img' style="border:3px solid #c3c3c3;">Please use a web-browse supporting HTML5 i.e. some latest one like Chromium or Firefox or Chrome or Safari etc.</canvas>
+
+</div>
 
 <div id='label_modal' class='modal' style='
 	  display: none; /* Hidden by default */
