@@ -1,3 +1,9 @@
+- title: "A New Fractal Series Expansion based Enhancement Model for License Plate Recognition"
+  authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Hamid A. Jalab, Rabha W. Ibrahim, Umapada Pal, Tong Lu
+  venue: "Signal Processing: Image Communication"
+  pdf: /assets/papers/spic2020enhancement.pd
+  url: https://doi.org/10.1016/j.image.2020.115958
+
 - title: "UDBNET: Unsupervised Document Binarization Network via Adversarial Game"
   authors: Amandeep Kumar*, Shuvozit Ghose*, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
   venue: under submission. Preprint available.
