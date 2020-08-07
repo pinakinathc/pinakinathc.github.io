@@ -2,7 +2,8 @@
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Hamid A. Jalab, Rabha W. Ibrahim, Umapada Pal, Tong Lu
   venue: "Signal Processing: Image Communication"
   pdf: /assets/papers/spic2020enhancement.pd
-  url: https://doi.org/10.1016/j.image.2020.115958
+  url: "https://doi.org/10.1016/j.image.2020.115958"
+  code: ""
 
 - title: "UDBNET: Unsupervised Document Binarization Network via Adversarial Game"
   authors: Amandeep Kumar*, Shuvozit Ghose*, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
@@ -30,9 +31,11 @@
   venue: ACPR 2019
   pdf: /assets/papers/acpr_2019_digit.pdf
   url: https://link.springer.com/chapter/10.1007/978-3-030-41299-9_21
+  code: ""
 
 - title: ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection and Recognition – RRC-MLT-2019
   authors: Nibal Nayef, Yash Patel, Michal Busta, Pinaki Nath Chowdhury, Dimosthenis Karatzas, Wafa Khlif, Jiri Matas, Umapada Pal, Jean-Christophe Burie, Cheng-lin Liu, Jean-Marc Ogier
   venue: ICDAR 2019
   pdf: assets/papers/1907.00945.pdf
   url: https://rrc.cvc.uab.es/?ch=15
+  code: ""

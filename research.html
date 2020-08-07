@@ -9,7 +9,9 @@ title: Research
     <li style="margin-bottom: 17px;">
       <b> {{ paper.title }} </b><br>
       {{ paper.authors }} <br>
-      <a href="{{ paper.pdf }}">pdf</a> <a href="{{ paper.url }}">URL</a> <a href="{{ paper.code }}">code</a> <br>
+      {% if paper.pdf != "" %} <a href="{{ paper.pdf }}">pdf</a> {% endif %}
+      {% if paper.url != "" %} <a href="{{ paper.url }}">URL</a> {% endif %}
+      {% if paper.code != "" %} <a href="{{ paper.code }}">code</a> {% endif %} <br>
       <b> Venue: {{ paper.venue}} </b><br>
     </li>
   {% endfor %}
