@@ -187,7 +187,7 @@ We do not record any data, but simply provide a script running in <b>your web-br
 
 		function getIndex(defaultValue=false) {
 			for (var i=0; i<gt[img.id]['gt'].length; i++){
-				if (insideComponent(curr_loc, gt[img.id]['gt'][i])) {
+				if (insideComponent(curr_loc, gt[img.id]['gt'][i]) && componentFlag == false) {
 						if (defaultValue){
 		      				label_value.value = gt[img.id]['label'][i];
 		      			}
