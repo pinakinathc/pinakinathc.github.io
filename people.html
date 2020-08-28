@@ -1,0 +1,28 @@
+---
+layout: default
+title: People
+---
+
+<style>.url {color: inherit; text-decoration: none;}</style>
+
+<h3> These are some wonderful people with whom I had the fortune to work/collaborate.</h3>
+
+<b>Academia:</b> <hr>
+<ul style='display: inline-block; text-align:left'>
+	{% for people in site.data.people.academia %}
+
+	<li><a class='url' href="{{ people.url }}"><b>{{ people.name }}</b> -- {{ people.job_title }} <b>{{ people.organisation }}</b></a></li><br>
+
+	{% endfor %}
+</ul>
+
+<br><br>
+<b>Industry:</b> <hr>
+<ul style='display: inline-block; text-align:left'>
+        {% for people in site.data.people.industry %}
+
+        <li><a class='url' href="{{ people.url }}"><b>{{ people.name }}</b> -- {{ people.job_title }} <b>{{ people.organisation }}</b></a></li><br>
+
+        {% endfor %}
+</ul>
+

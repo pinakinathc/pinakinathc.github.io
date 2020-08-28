@@ -1,0 +1,52 @@
+academia:
+        - name: Prof. Umapada Pal
+          job_title: Head of Computer Vision and Pattern Recognition Unit
+          organisation: Indian Statistical Institute, Kolkata
+          url: www.isical.ac.in/~umapada
+
+        - name: Assoc. Prof. Shivakumara Palaiahnakote
+          job_title: Dept. of Computer System &amp Technology, Faculty of Computer Science &amp Information Technology
+          organisation: University of Malaya
+          url: https://umexpert.um.edu.my/shiva
+
+        - name: Prof. Raghavendra Ramachandra
+          job_title: Dept. of Information Security and Communication Technology, Faculty of Information Technology and Electrical Engineering
+          organisation: Norwegian University of Science and Technology
+          url: https://www.ntnu.edu/employees/raghavendra.ramachandra
+
+        - name: Prof. Tong Lu
+          job_title: Dept. of Computer Science and Technology
+          organisation: Nanjing University
+          url: https://cs.nju.edu.cn/lutong
+
+        - name: Prof. Michael Blumenstein
+          job_title: Associate Dean (Research Strategy and Management) in the Faculty of Engineering & IT
+          organisation: University of Technology Sydney
+          url: https://www.uts.edu.au/staff/michael.blumenstein
+
+
+industry:
+        - name: Kiran Babu
+          job_title: Founder & CEO
+          organisation: Egnify Technologies Pvt Ltd
+          url: https://www.egnify.com/team
+
+        - name: Nikhil Sharma
+          job_title: Technical Program Manager
+          organisation: Egnify Technologies Pvt Ltd
+          url: https://www.linkedin.com/in/nykhylsharma
+
+        - name: Rahul Islam
+          job_title: ex-Senior Software Architect
+          organisation: Egnify Technologies Pvt Ltd
+          url: http://rahulislam.com
+
+        - name: Saurabh Chawla
+          job_title: ex-Technical Advisor
+          organisation: MyAnatomy Integrations Pvt Ltd
+          url: https://www.linkedin.com/in/saurabh-chawla-50283923/
+
+        - name: Rohit Mangalik
+          job_title: Founder & CEO
+          organisation: EduGorilla
+          url: https://www.linkedin.com/in/rohitmanglik
