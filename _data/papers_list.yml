@@ -1,3 +1,10 @@
+- title: "A new augmentation-based method for text detection in night and day license plate images"
+  authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Umapada Pal, Tong Lu, Michael Blumenstein
+  venue: "Multimedia Tools and Applications (2020)"
+  pdf: /assets/papers/Chowdhury2020_LPD_MTAP.pdf
+  url: "https://doi.org/10.1007/s11042-020-09681-0"
+  code: ""
+
 - title: "A New Fractal Series Expansion based Enhancement Model for License Plate Recognition"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Hamid A. Jalab, Rabha W. Ibrahim, Umapada Pal, Tong Lu
   venue: "Signal Processing: Image Communication (2020)"
