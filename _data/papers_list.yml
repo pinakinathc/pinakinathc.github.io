@@ -21,7 +21,7 @@
 
 - title: "UDBNET: Unsupervised Document Binarization Network via Adversarial Game"
   authors: Amandeep Kumar*, Shuvozit Ghose*, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
-  venue: under submission. Preprint available.
+  venue: ICPR 2020
   pdf: /assets/papers/2007.07075.pdf
   url: https://arxiv.org/abs/2007.07075
   code: https://github.com/VIROBO-15/UDBNET
