@@ -52,7 +52,7 @@ excerpt_separator: <!--more-->
         var data = [];
         var caption = "";
         let time;
-        var start_time = false;
+        var start_time = -1;
         var paint = false;
         var img_url = "";
 
@@ -66,7 +66,7 @@ excerpt_separator: <!--more-->
             let xy = getXY(e);
             let mouseX = xy[0]; let mouseY = xy[1];
             time = new Date();
-            if (start_time == false){
+            if (start_time == -1){
                 start_time = time.getTime();
                 timestamp = 0;
             }
@@ -80,7 +80,7 @@ excerpt_separator: <!--more-->
                 let xy = getXY(e);
                 let mouseX = xy[0]; let mouseY = xy[1];
                 time = new Date();
-                if (start_time == false){
+                if (start_time == -1){
                     start_time = time.getTime();
                     timestamp = 0;
                 }
@@ -101,7 +101,7 @@ excerpt_separator: <!--more-->
             let xy = getXY(e);
             let mouseX = xy[0]; let mouseY = xy[1];
             time = new Date();
-            if (start_time == false){
+            if (start_time == -1){
                 start_time = time.getTime();
                 timestamp = 0;
             }
@@ -316,6 +316,7 @@ excerpt_separator: <!--more-->
             canvas.width = Math.round(document.body.offsetWidth * 0.7);
             canvas.height = Math.round(document.body.offsetHeight * 0.5);
             data = []; // Reset Data
+            start_time = -1;
         }
 
         function redo_btn_fn() {
@@ -328,6 +329,7 @@ excerpt_separator: <!--more-->
             textarea.style.display = "none";
             textarea.value = "";
             btn_next.textContent = "Next to proceed";
+            start_time = -1;
             click_btn_fn();
         }
     </script>
