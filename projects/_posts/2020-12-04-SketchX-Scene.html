@@ -1,5 +1,7 @@
 ---
-comments: false
+layout: post
+header: false
+comments: true
 excerpt_separator: <!--more-->
 ---
 <!--more-->
@@ -15,18 +17,75 @@ excerpt_separator: <!--more-->
         </ul>
     </div>
     <br>
+    <button id="faq-modal">FAQ (Frequently Asked Questions.)</button>
+    <br>
 
     
     <h2 id="canvas_title", style="text-align: left; display: none"></h2><br>
     <canvas id="show_img" style="border: 3px solid #c3c3c3;  display: none;">Please use a web-browser supporting HTML5 i.e. some latest one like Chromium or Firefox or Chrome or Safari etc.</canvas>
     <canvas id="show_sketch" style="border: 3px solid #c3c3c3;  display: none;">Please use a web-browser supporting HTML5 i.e. some latest one like Chromium or Firefox or Chrome or Safari etc.</canvas>
     <br>
-    <textarea id="caption" style="display: none; width: 70%; height: 20%" placeholder="Describe you Sketch here..."></textarea>
+    <div id="caption-div", style="display: none;">
+        <h3> Instructions for Captions corresponding to Sketch.</h3>
+        <ul style="display: inline-block; text-align:left">
+            <li>Describe all important parts of the Sketch. The Caption should correspond to Sketch and NOT the Image.</li>
+            <li>Do not start the sentence with <q>There is</q>.</li>
+            <li>Do not describe things that might have happened in the future or past.</li>
+            <li>Do not describe what a person might say.</li>
+            <li>Do not give people proper names.</li>
+            <li>The sentence should contain at least 5 words.</li>
+        </ul>
+        <textarea id="caption" style="width: 70%; height: 20%" placeholder="Describe you Sketch here..."></textarea>
+    </div>
     <br>
     <button id="btn_next", onclick="click_btn_fn()">Next to proceed</button>
     <button id="btn_clear", style="display: none;", onclick="clear_btn_fn()">Click to clear</button>
     <button id="btn_accept", style="display: none;", onclick="accept_btn_fn()">Accept</button>
     <button id="btn_redo", style="display: none;", onclick="redo_btn_fn()">Redo</button>
+
+    <div id="myModal" class="modal", style="
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    ">
+
+      <!-- Modal content -->
+      <div class="modal-content" style="
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+          text-align:left;
+      ">
+        <span class="close-faq" style="color: #aaaaaa; float: right; font-size: 28px; font-weight: bold;">&times;</span>
+        <dl>
+            <dt><b>Question:</b> What if I made a mistake while drawing a sketch?</dt>
+            <dd>You can use the <q>clear</q> button to remove the mistakenly drawn strokes.</dd><br>
+            <dt><b>Question:</b> What if I am unable to complete the sketch within the given 60 seconds?</dt>
+            <dd>After the 60 second timer for drawing Sketch, in the bottom of the page click the <q>Redo</q> button.</dd><br>
+            <dt><b>Question:</b> Can I use more than 60 seconds?</dt>
+            <dd>No you cannot. We want you to draw whatever you feel is <i>most relevant</i> to describe the image within a short time of 60 seconds.</dd><br>
+            <dt><b>Question:</b> It is difficult to draw the objects in the image.</dt>
+            <dd>Do not worry. You do not have to draw perfect sketches!! You should draw a free hand sketch from which you can understand the image.</dd><br>
+            <dt><b>Question:</b> Can I view the image once more while drawing the sketch?</dt>
+            <dd>No you cannot. We want you to draw a sketch from what you can recall by looking at the image for 30 seconds ONLY. After the 60 seconds timer to draw the Sketch, you can always utilize the <q>Redo</q> button.</dd><br>
+            <dt><b>Question:</b> What if I forget (or cannot recall) some important detail of the image?</dt>
+            <dd>First try to remember it during the 60 seconds time given to draw the sketch. In case you feel you cannot remember and the detail is very important, use the <q>Redo</q> button.</dd><br>
+            <dt><b>Question:</b> My question is not addressed in this FAQ.</dt>
+            <dd>Step 1: Click the button at bottom of the page saying <b>Click to view/hide discussion</b> and post you Question. Step 2: Send an email to <code>p.chowdhury@surrey.ac.uk</code> describing the problem, with Subject: <b>SketchX-SST issue.</b></dd>
+        </dl>
+      </div>
+
+    </div>
 
     <script type="text/javascript">
         const server_url = "http://212.71.246.201:8000";
@@ -39,6 +98,10 @@ excerpt_separator: <!--more-->
         const canvas_sketch = document.getElementById("show_sketch");
         var ctx_sketch = canvas_sketch.getContext("2d");
 
+        var modal = document.getElementById("myModal");
+        var btn_modal = document.getElementById("faq-modal");
+        var span_modal = document.getElementsByClassName("close-faq")[0];
+
         canvas.width = Math.round(document.body.offsetWidth * 0.7);
         canvas.height = Math.round(document.body.offsetHeight * 0.7);
 
@@ -47,6 +110,7 @@ excerpt_separator: <!--more-->
         var btn_accept = document.getElementById("btn_accept");
         var btn_redo = document.getElementById("btn_redo");
         var textarea = document.getElementById("caption");
+        var textarea_div = document.getElementById("caption-div");
 
         var record_stroke = false;
         var data = [];
@@ -249,7 +313,7 @@ excerpt_separator: <!--more-->
             canvas.height = Math.round(document.body.offsetWidth * 0.35);
             canvas_sketch.height = Math.round(document.body.offsetWidth * 0.35);
             canvas_sketch.style.display = "inline-block";
-            textarea.style.display = "inline-block";
+            textarea_div.style.display = "inline-block";
             btn_next.textContent = "Next to proceed";
 
             canvas_title.textContent = "If you are happy with the (Sketch, Caption), enter 'Accept' button. Else you can redraw the sketch using 'Redo' button."
@@ -311,10 +375,10 @@ excerpt_separator: <!--more-->
             btn_next.textContent = "Next to proceed";
             btn_accept.style.display = "none";
             btn_redo.style.display = "none";
-            textarea.style.display = "none";
+            textarea_div.style.display = "none";
             textarea.value = "";
             canvas.width = Math.round(document.body.offsetWidth * 0.7);
-            canvas.height = Math.round(document.body.offsetHeight * 0.5);
+            canvas.height = Math.round(document.body.offsetHeight * 0.7);
             data = []; // Reset Data
             start_time = -1;
         }
@@ -322,15 +386,32 @@ excerpt_separator: <!--more-->
         function redo_btn_fn() {
             data = [];
             canvas.width = Math.round(document.body.offsetWidth * 0.7);
-            canvas.height = Math.round(document.body.offsetHeight * 0.5);
+            canvas.height = Math.round(document.body.offsetHeight * 0.7);
             canvas_sketch.style.display = "none";
             btn_accept.style.display = "none";
             btn_redo.style.display = "none";
-            textarea.style.display = "none";
+            textarea_div.style.display = "none";
             textarea.value = "";
             btn_next.textContent = "Next to proceed";
             start_time = -1;
             click_btn_fn();
+        }
+
+        // When the user clicks the button, open the modal 
+        btn_modal.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_modal.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
         }
     </script>
 </div>
