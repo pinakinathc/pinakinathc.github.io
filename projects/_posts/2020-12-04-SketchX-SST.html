@@ -258,7 +258,11 @@ excerpt_separator: <!--more-->
                     }
                     img_url = xhr.responseText;
                     if (img_url == "None") {
-                        alert("all images annotated. Thank you");
+                        alert("All images annotated. Thank you");
+                        return;
+                    }
+                    else if (img_url == "User_ID not recognised") {
+                        alert("User_ID not recognised. Please reload page and enter User_ID correctly.");
                         return;
                     }
                     img.src = img_url;
@@ -364,6 +368,12 @@ excerpt_separator: <!--more-->
             xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
             xhr.onreadystatechange = function () {
                 console.log(xhr.responseText);
+                responseText = xhr.responseText;
+                if (responseText == "User Not Found") {
+                    alert ("User Not Found. Please reload page and enter User_ID correctly.");
+                } else if (responseText == "Img URL Not Found") {
+                    alert ("Image Not Recognised. Please contact admin.")
+                }
             }
             xhr.send(JSON.stringify(post_json));
 
