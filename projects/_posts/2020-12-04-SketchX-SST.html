@@ -122,6 +122,9 @@ excerpt_separator: <!--more-->
         var img_url = "";
 
         press = async function (e) {
+            if (btn_next.disabled && btn_next.textContent == "Next to proceed") {
+                return;
+            }
             if (btn_next.textContent == "Next to proceed") {
                 console.log("workin...");
                 verify();
