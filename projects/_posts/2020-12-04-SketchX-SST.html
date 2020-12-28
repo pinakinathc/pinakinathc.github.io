@@ -381,24 +381,23 @@ excerpt_separator: <!--more-->
                 } else if (responseText == "Img URL Not Found") {
                     alert ("Image Not Recognised. Please contact admin.")
                 }
+                canvas.style.display = "none";
+                canvas_sketch.style.display = "none";
+                canvas_title.style.display = "none";
+                record_stroke = false;
+                btn_next.disabled = false;
+                btn_next.textContent = "Next to proceed";
+                btn_accept.style.display = "none";
+                btn_redo.style.display = "none";
+                textarea_div.style.display = "none";
+                textarea.value = "";
+                canvas.width = Math.round(document.body.offsetWidth * 0.7);
+                // canvas.height = Math.round(document.body.offsetHeight * 0.7);
+                canvas.height = Math.round(canvas.width*0.66);
+                data = []; // Reset Data
+                start_time = -1;
             }
             xhr.send(JSON.stringify(post_json));
-
-            canvas.style.display = "none";
-            canvas_sketch.style.display = "none";
-            canvas_title.style.display = "none";
-            record_stroke = false;
-            btn_next.disabled = false;
-            btn_next.textContent = "Next to proceed";
-            btn_accept.style.display = "none";
-            btn_redo.style.display = "none";
-            textarea_div.style.display = "none";
-            textarea.value = "";
-            canvas.width = Math.round(document.body.offsetWidth * 0.7);
-            // canvas.height = Math.round(document.body.offsetHeight * 0.7);
-            canvas.height = Math.round(canvas.width*0.66);
-            data = []; // Reset Data
-            start_time = -1;
         }
 
         function redo_btn_fn() {
