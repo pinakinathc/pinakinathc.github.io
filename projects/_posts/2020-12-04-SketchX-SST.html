@@ -120,6 +120,7 @@ excerpt_separator: <!--more-->
         var start_time = -1;
         var paint = false;
         var img_url = "";
+        var img_idx = 0;
 
         press = async function (e) {
             if (btn_next.disabled && btn_next.textContent == "Next to proceed") {
@@ -256,21 +257,25 @@ excerpt_separator: <!--more-->
                 xhr.setRequestHeader("Access-Control-Allow-Methods", "POST");
                 xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
                 xhr.onreadystatechange = function () {
-                    console.log(xhr.responseText);
+                    // img_url = xhr.responseText;
+                    var response_data = xhr.responseText;
                     img.onload = function() {
                         ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
                         wait_img();
                     }
-                    img_url = xhr.responseText;
-                    if (img_url == "None") {
+                    if (response_data == "None") {
                         alert("All images annotated. Thank you");
                         return;
                     }
-                    else if (img_url == "User_ID not recognised") {
+                    else if (response_data == "User_ID not recognised") {
                         alert("User_ID not recognised. Please reload page and enter User_ID correctly.");
                         return;
+                    } else {
+                        response_data = JSON.parse(response_data);
+                        img_url = response_data['img_url'];
+                        img_idx = parseInt(response_data['index']);
+                        img.src = img_url;
                     }
-                    img.src = img_url;
                 }
                 xhr.send(JSON.stringify(post_json));
             } else {wait_sketch();}
@@ -282,7 +287,7 @@ excerpt_separator: <!--more-->
             btn_next.disabled = true;
             var time = 30;
             var x = setInterval(function(){
-                canvas_title.textContent = "Image will disapear in "+ time + " seconds."
+                canvas_title.textContent = "Image "+ (img_idx+1) +" out of 100 will disapear in "+ time + " seconds."
                 time--;
                 if (time<0) {
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
