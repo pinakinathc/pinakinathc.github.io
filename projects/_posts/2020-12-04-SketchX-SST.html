@@ -102,7 +102,7 @@ excerpt_separator: <!--more-->
         var btn_modal = document.getElementById("faq-modal");
         var span_modal = document.getElementsByClassName("close-faq")[0];
 
-        canvas.width = Math.round(document.body.offsetWidth * 0.7);
+        canvas.width = Math.round(document.body.offsetWidth * 0.5);
         // canvas.height = Math.round(document.body.offsetHeight * 0.7);
         canvas.height = Math.round(canvas.width*0.66);
 
@@ -396,7 +396,7 @@ excerpt_separator: <!--more-->
                 btn_redo.style.display = "none";
                 textarea_div.style.display = "none";
                 textarea.value = "";
-                canvas.width = Math.round(document.body.offsetWidth * 0.7);
+                canvas.width = Math.round(document.body.offsetWidth * 0.5);
                 // canvas.height = Math.round(document.body.offsetHeight * 0.7);
                 canvas.height = Math.round(canvas.width*0.66);
                 data = []; // Reset Data
@@ -407,7 +407,7 @@ excerpt_separator: <!--more-->
 
         function redo_btn_fn() {
             data = [];
-            canvas.width = Math.round(document.body.offsetWidth * 0.7);
+            canvas.width = Math.round(document.body.offsetWidth * 0.5);
             // canvas.height = Math.round(document.body.offsetHeight * 0.7);
             canvas.height = Math.round(canvas.width*0.66);
             canvas_sketch.style.display = "none";
