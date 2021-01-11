@@ -4,6 +4,8 @@
   pdf: /assets/papers/Chowdhury_2020_APSEGAT.pdf
   url: "https://doi.org/10.1016/j.patrec.2020.09.018"
   code: /projects/2020/07/19/APSEGAT.html
+  slides: ""
+  video: ""
 
 - title: "A new augmentation-based method for text detection in night and day license plate images"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Umapada Pal, Tong Lu, Michael Blumenstein
@@ -11,6 +13,8 @@
   pdf: /assets/papers/Chowdhury2020_LPD_MTAP.pdf
   url: "https://doi.org/10.1007/s11042-020-09681-0"
   code: ""
+  slides: ""
+  video: ""
 
 - title: "A New Fractal Series Expansion based Enhancement Model for License Plate Recognition"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Hamid A. Jalab, Rabha W. Ibrahim, Umapada Pal, Tong Lu
@@ -18,6 +22,8 @@
   pdf: /assets/papers/spic2020enhancement.pdf
   url: "https://doi.org/10.1016/j.image.2020.115958"
   code: ""
+  slides: ""
+  video: ""
 
 - title: "UDBNET: Unsupervised Document Binarization Network via Adversarial Game"
   authors: Amandeep Kumar*, Shuvozit Ghose*, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
@@ -43,6 +49,8 @@
   pdf: /assets/papers/acpr_2019_lp.pdf
   url: https://link.springer.com/chapter/10.1007/978-3-030-41404-7_53
   code: https://github.com/pinakinathc/task_image_enhancement
+  slides: ""
+  video: ""
 
 - title: Handwritten Numeral String Recognition for Indian Scripts
   authors: Hongjian Zhan, Pinaki Nath Chowdhury, Umapada Pal, and Yue Lu
@@ -50,6 +58,8 @@
   pdf: /assets/papers/acpr_2019_digit.pdf
   url: https://link.springer.com/chapter/10.1007/978-3-030-41299-9_21
   code: ""
+  slides: ""
+  video: ""
 
 - title: ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection and Recognition – RRC-MLT-2019
   authors: Nibal Nayef, Yash Patel, Michal Busta, Pinaki Nath Chowdhury, Dimosthenis Karatzas, Wafa Khlif, Jiri Matas, Umapada Pal, Jean-Christophe Burie, Cheng-lin Liu, Jean-Marc Ogier
@@ -57,3 +67,5 @@
   pdf: assets/papers/1907.00945.pdf
   url: https://rrc.cvc.uab.es/?ch=15
   code: ""
+  slides: ""
+  video: ""
