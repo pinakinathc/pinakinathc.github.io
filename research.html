@@ -11,7 +11,9 @@ title: Research
       {{ paper.authors }} <br>
       {% if paper.pdf != "" %} <a href="{{ paper.pdf }}">pdf</a> {% endif %}
       {% if paper.url != "" %} <a href="{{ paper.url }}">URL</a> {% endif %}
-      {% if paper.code != "" %} <a href="{{ paper.code }}">code</a> {% endif %} <br>
+      {% if paper.code != "" %} <a href="{{ paper.code }}">code</a> {% endif %}
+      {% if paper.code != "" %} <a href="{{ paper.slides }}">slides</a> {% endif %}
+      {% if paper.code != "" %} <a href="{{ paper.video }}">video</a> {% endif %} <br>
       <b> Venue: {{ paper.venue}} </b><br>
     </li>
   {% endfor %}

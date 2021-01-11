@@ -25,6 +25,8 @@
   pdf: /assets/papers/2007.07075.pdf
   url: https://arxiv.org/abs/2007.07075
   code: https://github.com/VIROBO-15/UDBNET
+  slides: assets/slides/ICPR-2150.pdf
+  video: https://youtu.be/IxQCciXYpkU
 
 - title: Modeling Extent-of-Texture Information for Ground Terrain Recognition
   authors: Shuvozit Ghose, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
@@ -32,6 +34,8 @@
   pdf: /assets/papers/2004.08141.pdf
   url: https://arxiv.org/abs/2004.08141
   code: https://github.com/ShuvozitGhose/Ground-Terrain-EoT
+  slides: assets/slides/ICPR-1305.pdf
+  video: https://youtu.be/QR953dUqv2Y
 
 - title: A New U-Net based Enhancement Model for License Plate Detection in Night and Day Images
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Raghavendra Ramachandra, Umapada Pal, Tong Lu, and Michael Blumenstein
