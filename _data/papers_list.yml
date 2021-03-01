@@ -1,3 +1,30 @@
+- title: "Vectorization and Rasterization: Self-Supervised Learning for Sketch and Handwriting"
+  authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Yongxin Yang, Timothy Hospedales, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
+  pdf: ""
+  url: ""
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "More Photos are All You Need: Semi-Supervised Learning for Fine-Grained Sketch Based Image Retrieval"
+  authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Aneeshan Sain, Yongxin Yang, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
+  pdf: ""
+  url: ""
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "MetaHTR: Towards Writer-Adaptive Handwritten Text Recognition"
+  authors: Ayan Kumar Bhunia, Shuvozit Ghose, Amandeep Kumar, Pinaki Nath Chowdhury, Aneeshan Sain, Yi-Zhe Song
+  venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
+  pdf: ""
+  url: ""
+  code: ""
+  slides: ""
+  video: ""
+  
 - title: "Graph Attention Network for Detecting License Plates in Crowded Street Scenes"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Swati Kanchan, Ramachandra Raghavendra, Umapada Pal, Tong Lu, Daniel Lopresti
   venue: "Pattern Recognition Letters (2020)"

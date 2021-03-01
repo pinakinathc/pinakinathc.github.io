@@ -2,23 +2,35 @@
 layout: default
 title: Research
 ---
-<h2>This section provides a list of papers I have published</h2><hr>
+<h2>Selected Publication. Please go to my <a href="/all_papers">List of All papers</a> for a detailed list.</h2><hr>
 
 <ul>
-  {% for paper in site.data.papers_list %}
+  {% for paper in site.data.selected_papers_list %}
     <li style="margin-bottom: 17px;">
       <b> {{ paper.title }} </b><br>
       {{ paper.authors }} <br>
+      <b> Venue: {{ paper.venue}} </b><br>
       {% if paper.pdf != "" %} <a href="{{ paper.pdf }}">pdf</a> {% endif %}
       {% if paper.url != "" %} <a href="{{ paper.url }}">URL</a> {% endif %}
       {% if paper.code != "" %} <a href="{{ paper.code }}">code</a> {% endif %}
       {% if paper.slides != "" %} <a href="{{ paper.slides }}">slides</a> {% endif %}
       {% if paper.video != "" %} <a href="{{ paper.video }}">video</a> {% endif %} <br>
-      <b> Venue: {{ paper.venue}} </b><br>
     </li>
   {% endfor %}
 </ul>
 * equal contribution
+
+<h2>Teaching</h2><hr>
+
+<ul>
+        <li>EEE1032 Mathematics II: Engineering Maths (Teaching Assistant 21'), University of Surrey</li>
+</ul>
+
+<h2>Volunteer</h2><hr>
+<ul>
+        <li>Reviewer for International Conference on Computer Vision (ICCV) 2021</li>
+</ul>
+
 
 <h2>Research Experience</h2><hr>
 <style>
@@ -40,3 +52,4 @@ title: Research
     </div>
 </div>
 {% endfor %}
+
