@@ -1,18 +1,18 @@
 - title: "Vectorization and Rasterization: Self-Supervised Learning for Sketch and Handwriting"
   authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Yongxin Yang, Timothy Hospedales, Tao Xiang, Yi-Zhe Song
   venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
-  pdf: ""
+  pdf: /assets/papers/bhunia_self_2021.pdf
   url: ""
-  code: ""
+  code: "https://github.com/AyanKumarBhunia/Self-Supervised-Learning-for-Sketch"
   slides: ""
   video: ""
 
 - title: "More Photos are All You Need: Semi-Supervised Learning for Fine-Grained Sketch Based Image Retrieval"
   authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Aneeshan Sain, Yongxin Yang, Tao Xiang, Yi-Zhe Song
   venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
-  pdf: ""
+  pdf: /assets/papers/bhunia_semi_2021.pdf
   url: ""
-  code: ""
+  code: "https://github.com/AyanKumarBhunia/semisupervised-FGSBIR"
   slides: ""
   video: ""
 
