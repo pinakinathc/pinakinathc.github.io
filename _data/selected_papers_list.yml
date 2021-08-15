@@ -1,3 +1,21 @@
+- title: "Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation"
+  authors: Ayan Kumar Bhunia, Aneeshan Sain, Pinaki Nath Chowdhury, Yi-Zhe Song
+  venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
+  pdf: ""
+  url: "https://arxiv.org/abs/2107.12087"
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "Towards the Unseen: Iterative Text Recognition by Distilling from Errors"
+  authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Aneeshan Sain, Yi-Zhe Song
+  venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
+  pdf: ""
+  url: "https://arxiv.org/abs/2107.12081"
+  code: ""
+  slides: ""
+  video: ""
+
 - title: "Vectorization and Rasterization: Self-Supervised Learning for Sketch and Handwriting"
   authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Yongxin Yang, Timothy Hospedales, Tao Xiang, Yi-Zhe Song
   venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
@@ -24,22 +42,3 @@
   code: ""
   slides: ""
   video: ""
-
-- title: "Graph Attention Network for Detecting License Plates in Crowded Street Scenes"
-  authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Swati Kanchan, Ramachandra Raghavendra, Umapada Pal, Tong Lu, Daniel Lopresti
-  venue: "Pattern Recognition Letters (2020)"
-  pdf: /assets/papers/Chowdhury_2020_APSEGAT.pdf
-  url: "https://doi.org/10.1016/j.patrec.2020.09.018"
-  code: /projects/2020/07/19/APSEGAT.html
-  slides: ""
-  video: ""
-
-- title: "Modeling Extent-of-Texture Information for Ground Terrain Recognition"
-  authors: Shuvozit Ghose, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
-  venue: "International Conference on Pattern Recognition (ICPR), 2020"
-  pdf: /assets/papers/2004.08141.pdf
-  url: https://arxiv.org/abs/2004.08141
-  code: https://github.com/ShuvozitGhose/Ground-Terrain-EoT
-  slides: assets/slides/ICPR-1305.pdf
-  video: https://youtu.be/QR953dUqv2Y
-
