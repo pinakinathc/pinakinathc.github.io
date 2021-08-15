@@ -4,11 +4,12 @@ comments: true
 mathjax: true
 author: pinaki
 excerpt_separator: <!--more-->
+permalink: /first-travel-to-UK
 ---
 <!--more-->
 I travelled to the United Kingdom on September 14th, 2020.
 
-<b>Images:</b> <a href="/image_gallery#uk-travel-2020">pinakinathc.me/image_gallery#uk-travel-2020</a>
+<b>Images:</b> <a href="/image_gallery">pinakinathc.me/image_gallery</a>
 
 This blog is going to be informative in the beginning -- the difficulties an average student faced due to COVID-19 while he was trying to figure out a way to reach UK to continue on his dreams. The later half would be a rant about my life (yeah pretty boring for you but the only way to vent out my feelings).
 

@@ -3,6 +3,7 @@ layout: post
 comments: true
 mathjax: true
 author: pinaki
+permalink: /theoretical-gurantees-of-learning/
 ---
 
 

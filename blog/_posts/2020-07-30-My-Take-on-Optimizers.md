@@ -3,6 +3,7 @@ layout: post
 comments: true
 mathjax: true
 author: pinaki
+permalink: /understanding-optimizers/
 ---
 
 this is a work in progress...please view later.
