@@ -3,6 +3,7 @@ layout: post
 comments: true
 mathjax: true
 author: pinaki
+permalink: /pinakinathc-py/
 ---
 
 This is package is aimed to provide several utilities that make my (and hopefully your) life much easier. 

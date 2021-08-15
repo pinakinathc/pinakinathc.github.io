@@ -3,6 +3,7 @@ layout: post
 comments: true
 mathjax: true
 author: pinaki
+permalink: /yolov3-oil-palm-detection/
 ---
 
 This is a recent work where the aim is to detect and count Oil Palm Trees in Drone Images.
