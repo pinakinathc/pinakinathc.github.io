@@ -10,7 +10,7 @@ This is a recent work where the aim is to detect and count Oil Palm Trees in Dro
 
 # Oil Palm Tree Counting in Drone Images
 
-*Anonymous Authors*
+Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Lokesh Nandanwar, Faizal Samiron, Umapada Pal
 
 ## Abstract
 
