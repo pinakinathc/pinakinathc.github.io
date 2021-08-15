@@ -2,7 +2,7 @@
 layout: default
 title: Research
 ---
-<h2>This section provides a list of papers I have published.</h2><hr>
+<h2>This section provides a comprehensive list of all papers I have published.</h2><hr>
 
 <ul>
   {% for paper in site.data.papers_list %}
@@ -10,11 +10,11 @@ title: Research
       <b> {{ paper.title }} </b><br>
       {{ paper.authors }} <br>
       <b> Venue: {{ paper.venue}} </b><br>
-      {% if paper.pdf != "" %} <a href="{{ paper.pdf }}">pdf</a> {% endif %}
-      {% if paper.url != "" %} <a href="{{ paper.url }}">URL</a> {% endif %}
-      {% if paper.code != "" %} <a href="{{ paper.code }}">code</a> {% endif %}
-      {% if paper.slides != "" %} <a href="{{ paper.slides }}">slides</a> {% endif %}
-      {% if paper.video != "" %} <a href="{{ paper.video }}">video</a> {% endif %} <br>
+      {% if paper.pdf != "" %} | <a href="{{ paper.pdf }}">pdf</a> | {% endif %}
+      {% if paper.url != "" %} | <a href="{{ paper.url }}">URL</a> | {% endif %}
+      {% if paper.code != "" %} | <a href="{{ paper.code }}">code</a> | {% endif %}
+      {% if paper.slides != "" %} | <a href="{{ paper.slides }}">slides</a> | {% endif %}
+      {% if paper.video != "" %} | <a href="{{ paper.video }}">video</a> | {% endif %} <br>
     </li>
   {% endfor %}
 </ul>

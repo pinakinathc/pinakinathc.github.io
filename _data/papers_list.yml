@@ -60,10 +60,19 @@
   code: ""
   slides: ""
   video: ""
+
+- title: "An Episodic Learning Network for Text Detection on Human Bodies in Sports Images"
+  authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Ramachandra Raghavendra, Sauradip Nag, Umapada Pal, Tong Lu, Daniel Lopresti
+  venue: "IEEE Transactions on Circuits and Systems for Video Technology (T-CVST) 2021"
+  pdf: ""
+  url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9466949"
+  code: ""
+  slides: ""
+  video: ""  
   
 - title: "Graph Attention Network for Detecting License Plates in Crowded Street Scenes"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Swati Kanchan, Ramachandra Raghavendra, Umapada Pal, Tong Lu, Daniel Lopresti
-  venue: "Pattern Recognition Letters (2020)"
+  venue: "Pattern Recognition Letters (PRL) 2020"
   pdf: /assets/papers/Chowdhury_2020_APSEGAT.pdf
   url: "https://doi.org/10.1016/j.patrec.2020.09.018"
   code: /projects/2020/07/19/APSEGAT.html
@@ -72,7 +81,7 @@
 
 - title: "A new augmentation-based method for text detection in night and day license plate images"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Umapada Pal, Tong Lu, Michael Blumenstein
-  venue: "Multimedia Tools and Applications (2020)"
+  venue: "Multimedia Tools and Applications (MTAP) 2020"
   pdf: /assets/papers/Chowdhury2020_LPD_MTAP.pdf
   url: "https://doi.org/10.1007/s11042-020-09681-0"
   code: ""
@@ -81,7 +90,7 @@
 
 - title: "A New Fractal Series Expansion based Enhancement Model for License Plate Recognition"
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Hamid A. Jalab, Rabha W. Ibrahim, Umapada Pal, Tong Lu
-  venue: "Signal Processing: Image Communication (2020)"
+  venue: "Signal Processing: Image Communication 2020"
   pdf: /assets/papers/spic2020enhancement.pdf
   url: "https://doi.org/10.1016/j.image.2020.115958"
   code: ""
@@ -90,7 +99,7 @@
 
 - title: "UDBNET: Unsupervised Document Binarization Network via Adversarial Game"
   authors: Amandeep Kumar*, Shuvozit Ghose*, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
-  venue: ICPR 2020
+  venue: International Conference on Pattern Recognition (ICPR) 2020
   pdf: /assets/papers/2007.07075.pdf
   url: https://arxiv.org/abs/2007.07075
   code: https://github.com/VIROBO-15/UDBNET
@@ -99,7 +108,7 @@
 
 - title: Modeling Extent-of-Texture Information for Ground Terrain Recognition
   authors: Shuvozit Ghose, Pinaki Nath Chowdhury, Partha Pratim Roy, Umapada Pal
-  venue: ICPR 2020
+  venue: International Conference on Pattern Recognition (ICPR) 2020
   pdf: /assets/papers/2004.08141.pdf
   url: https://arxiv.org/abs/2004.08141
   code: https://github.com/ShuvozitGhose/Ground-Terrain-EoT
@@ -108,7 +117,7 @@
 
 - title: A New U-Net based Enhancement Model for License Plate Detection in Night and Day Images
   authors: Pinaki Nath Chowdhury, Palaiahnakote Shivakumara, Raghavendra Ramachandra, Umapada Pal, Tong Lu, and Michael Blumenstein
-  venue: ACPR 2019
+  venue: Asian Conference on Pattern Recognition (ACPR) 2019
   pdf: /assets/papers/acpr_2019_lp.pdf
   url: https://link.springer.com/chapter/10.1007/978-3-030-41404-7_53
   code: https://github.com/pinakinathc/task_image_enhancement
@@ -117,7 +126,7 @@
 
 - title: Handwritten Numeral String Recognition for Indian Scripts
   authors: Hongjian Zhan, Pinaki Nath Chowdhury, Umapada Pal, and Yue Lu
-  venue: ACPR 2019
+  venue: Asian Conference on Pattern Recognition (ACPR) 2019
   pdf: /assets/papers/acpr_2019_digit.pdf
   url: https://link.springer.com/chapter/10.1007/978-3-030-41299-9_21
   code: ""
@@ -126,7 +135,7 @@
 
 - title: ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection and Recognition – RRC-MLT-2019
   authors: Nibal Nayef, Yash Patel, Michal Busta, Pinaki Nath Chowdhury, Dimosthenis Karatzas, Wafa Khlif, Jiri Matas, Umapada Pal, Jean-Christophe Burie, Cheng-lin Liu, Jean-Marc Ogier
-  venue: ICDAR 2019
+  venue: International Conference on Document Analysis and Recognition (ICDAR) 2019
   pdf: assets/papers/1907.00945.pdf
   url: https://rrc.cvc.uab.es/?ch=15
   code: ""
