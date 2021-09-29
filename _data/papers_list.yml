@@ -1,8 +1,8 @@
 - title: "SketchLattice: Latticed Representation for Sketch Manipulation"
   authors: Yonggang Qi*, Guoyao Su*, Pinaki Nath Chowdhury, Mingkang Li, Yi-Zhe Song
   venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: ""
-  url: ""
+  pdf: /assets/papers/sketchlattice.pdf
+  url: "https://arxiv.org/abs/2108.11636"
   code: ""
   slides: ""
   video: ""
@@ -10,7 +10,7 @@
 - title: "Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation"
   authors: Ayan Kumar Bhunia, Aneeshan Sain, Pinaki Nath Chowdhury, Yi-Zhe Song
   venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: ""
+  pdf: /assets/papers/text_is_text.pdf
   url: "https://arxiv.org/abs/2107.12087"
   code: ""
   slides: ""
@@ -19,7 +19,7 @@
 - title: "Towards the Unseen: Iterative Text Recognition by Distilling from Errors"
   authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Aneeshan Sain, Yi-Zhe Song
   venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: ""
+  pdf: /assets/papers/iterative_text.pdf
   url: "https://arxiv.org/abs/2107.12081"
   code: ""
   slides: ""
@@ -28,7 +28,7 @@
 - title: "Joint Visual Semantic Reasoning: Multi-Stage Decoder for Text Recognition"
   authors: Ayan Kumar Bhunia, Aneeshan Sain, Amandeep Kumar, Shuvozit Ghose, Pinaki Nath Chowdhury, Yi-Zhe Song
   venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: ""
+  pdf: /assets/papers/text_visual_semantic.pdf
   url: "https://arxiv.org/abs/2107.12090"
   code: ""
   slides: ""
@@ -55,8 +55,8 @@
 - title: "MetaHTR: Towards Writer-Adaptive Handwritten Text Recognition"
   authors: Ayan Kumar Bhunia, Shuvozit Ghose, Amandeep Kumar, Pinaki Nath Chowdhury, Aneeshan Sain, Yi-Zhe Song
   venue: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
-  pdf: ""
-  url: ""
+  pdf: /assets/papers/metaHTR.pdf
+  url: "https://arxiv.org/abs/2104.01876"
   code: ""
   slides: ""
   video: ""
