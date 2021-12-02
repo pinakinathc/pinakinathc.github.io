@@ -1,0 +1,35 @@
+---
+layout: default
+title: Blog
+---
+
+<h3>Datasets</h3><hr>
+<ul>
+  {% for post in site.categories.datasets %}
+  <li>
+    <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>Blogs</h3><hr>
+<ul>
+  {% for post in site.categories.blog %}
+    <li>
+      <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Lecture Notes</h3><hr>
+<ul>
+  {% for post in site.categories.lectures %}
+    <li>
+      <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
