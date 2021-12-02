@@ -6,7 +6,7 @@ author: pinaki
 permalink: /yolov3-oil-palm-detection/
 ---
 
-This is a recent work where the aim is to detect and count Oil Palm Trees in Drone Images.
+This project detects and counts Oil Palm Trees in Drone Images.
 
 # Oil Palm Tree Counting in Drone Images
 
