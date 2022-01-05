@@ -3,13 +3,13 @@ layout: default
 title: Travel and Personal
 excerpt_separator: <!--more-->
 ---
-<h2>You can find my Travel and Personal blogs here...</h2><hr>
+<h3>You can find my Travel and Personal blogs here...</h3><hr>
 This section is informal and is relevant only if you want to know me as just another human who has made no contribution to this World. Apart from my work, few other things that I value is travelling to different places and learning from countless. It helps this little mollusc come out of his shell and see the world and be humbled and inspired by several people who are always smarter than him, wiser than him, more hardworking than him, more ambitious than him and most importantly, more humble than him.
 
 <ul>
   {% for post in site.categories.travel %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
       {{ post.excerpt }}
     </li>
   {% endfor %}
