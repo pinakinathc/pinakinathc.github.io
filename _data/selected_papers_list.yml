@@ -1,3 +1,12 @@
+- title: "SceneTrilogy: On Scene Sketches and its Relationship with Text and Photo"
+  authors: Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Tao Xiang and Yi-Zhe Song
+  venue: "arXiv preprint arXiv:2204.11964"
+  pdf: /assets/papers/scenetrilogy.pdf
+  url: "https://arxiv.org/abs/2204.11964"
+  code: ""
+  slides: ""
+  video: ""
+
 - title: "FS-COCO: Towards Understanding of Freehand Sketches of Common Objects in Context"
   authors: Pinaki Nath Chowdhury, Aneeshan Sain, Yulia Gryaditskaya, Ayan Kumar Bhunia, Tao Xiang, Yi-Zhe Song
   venue: "arXiv preprint arXiv:2203.02113"
