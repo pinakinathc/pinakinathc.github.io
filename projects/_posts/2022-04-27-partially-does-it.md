@@ -34,8 +34,7 @@ We scrutinise an important observation plaguing scene-level sketch research – 
 
 <p align="center"><img src="/projects/images/partially-does-it-framework.png" alt="motivation figure" width="50%"/></p>
 
-Illustration of our proposed method for scene-level FG-SBIR. Existing baselines typically use Global Average Pooling (GAP) on the convolutional feature-map. This loses localised region-specific feature representation necessary for “partial” scene sketches. Our proposed method models partially-aware region-wise associativity to solve this “partial” problem using: (i) set-based distance of local feature maps using optimal transport ($$\mathcal{L}^{R}_{trip}$$), (ii) a weighted cross-modal comparison of region adjacency matrix to capture holistic scene configuration ($$\mathcal{L}^{G}_{trip}$$). modal setup in an end-to-end trainable framework.
-
+Illustration of our proposed method for scene-level FG-SBIR. Existing baselines typically use Global Average Pooling (GAP) on the convolutional feature-map. This loses localised region-specific feature representation necessary for “partial” scene sketches. Our proposed method models partially-aware region-wise associativity to solve this “partial” problem using: (i) set-based distance of local feature maps using optimal transport ($$\mathcal{L}^{R}_{trip}$$), (ii) a weighted cross-modal comparison of region adjacency matrix to capture holistic scene configuration ($$\mathcal{L}^{G}_{trip}$$).
 ### Code
 
 The code is available at: [https://github.com/pinakinathc/partially-does-it](https://github.com/pinakinathc/partially-does-it)
