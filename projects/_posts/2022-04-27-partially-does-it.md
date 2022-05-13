@@ -41,6 +41,12 @@ The code is available at: [https://github.com/pinakinathc/partially-does-it](htt
 
 The main contribution of this paper -- a new distance metric for FG-SBIR that computes a loss on sets of local feature is also given in **Supplemental Section A.**
 
+### Instructions to Execute the code
+
+```
+python main.py
+```
+
 ### TODO
 
 Add a detailed instruction to run the code.
