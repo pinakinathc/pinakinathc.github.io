@@ -9,13 +9,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style type="text/css">body {padding-left:1%; padding-right:1%; background-color: #ffe7b7; }</style>
+    <style type="text/css">
+      body {padding-left:1%; padding-right:1%; background-color: #ffe7b7; font-family: "Computer Modern Sans", sans-serif;;}
+      img {max-width:600px; max-height:600px;}
+    </style>
 
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    <div class="row text-center" style="margin: 1% 1% 1% 1%;">
+      <div class='col-sm-1'></div>
+      <div class='col-sm-10', style="text-align:left;">
+        {{ content }}
+      </div>
+      <div class='col-sm-1'></div>
+      </div>
   </body>
 </html>
