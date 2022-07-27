@@ -62,3 +62,13 @@ Add a detailed instruction to run the code.
     year={2022}
 }
 ```
+
+### **Social Media**
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Partially Does It: Towards Scene-Level FG-SBIR with Partial Input&quot;, CVPR 2022<br><br>Find me at Poster session 1.1, Number 235a.<a href="https://twitter.com/cvssp_research?ref_src=twsrc%5Etfw">@cvssp_research</a> <a href="https://twitter.com/hashtag/CVPR22?src=hash&amp;ref_src=twsrc%5Etfw">#CVPR22</a> <a href="https://twitter.com/hashtag/NewOrleans?src=hash&amp;ref_src=twsrc%5Etfw">#NewOrleans</a> <a href="https://twitter.com/hashtag/sketch?src=hash&amp;ref_src=twsrc%5Etfw">#sketch</a></p>&mdash; Pinaki N Chowdhury (@pinaki_nc) <a href="https://twitter.com/pinaki_nc/status/1539268760950947841?ref_src=twsrc%5Etfw">June 21, 2022</a></blockquote> 
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Partially Does It: Towards Scene-Level FG-SBIR with Partial Input<a href="https://t.co/lfpG9JYtT0">https://t.co/lfpG9JYtT0</a></p>&mdash; DeepTweet (@DeepL_Tweet) <a href="https://twitter.com/DeepL_Tweet/status/1516463133602115587?ref_src=twsrc%5Etfw">April 19, 2022</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p lang="in" dir="ltr">Partially Does It: Towards Scene-Level FG-SBIR with Partial Input. Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, Aneeshan Sain, Tao Xiang, and Yi-Zhe Song <a href="https://t.co/wMhMCrQci8">https://t.co/wMhMCrQci8</a></p>&mdash; cs.CV Papers (@arxiv_cs_cv_pr) <a href="https://twitter.com/arxiv_cs_cv_pr/status/1508652123466379265?ref_src=twsrc%5Etfw">March 29, 2022</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
