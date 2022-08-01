@@ -1,6 +1,18 @@
 - organization: Indian Statistical Institute, Kolkata
   image: /assets/images/organizations/isi.jpg
-  supervisor: Prof. Umapada Pal, head of CVPR Unit
+  supervisor: Prof. Umapada Pal
+  job_title: Visiting Scientist
+  duration: January 2022
+
+- organization: Adobe Research, London
+  image: /assets/images/organizations/adobe.jpg
+  supervisor: Tuanfeng Wang, Duygu Ceylan, and Niloy J. Mitra
+  job_title: Intern
+  duration: May 2021 - July 2021
+
+- organization: Indian Statistical Institute, Kolkata
+  image: /assets/images/organizations/isi.jpg
+  supervisor: Prof. Umapada Pal
   job_title: Project Linked Person
   duration: June 2018 - September 2020
 
