@@ -1,5 +1,14 @@
+- title: "Garment Ideation: Iterative view-aware sketch-based garment modeling"
+  authors: Pinaki Nath Chowdhury, Tuanfeng Wang, Duygu Ceylan, Yi-Zhe Song, Yulia Gryaditskaya
+  venue: "International Conference on 3D Vision (3DV) 2022 ORAL"
+  pdf: ""
+  url: ""
+  code: "https://github.com/pinakinathc/multiviewsketch-garment"
+  slides: ""
+  video: ""
+
 - title: "SceneTrilogy: On Scene Sketches and its Relationship with Text and Photo"
-  authors: Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Tao Xiang and Yi-Zhe Song
+  authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Tao Xiang, Yi-Zhe Song
   venue: "arXiv preprint arXiv:2204.11964"
   pdf: /assets/papers/scenetrilogy.pdf
   url: "https://arxiv.org/abs/2204.11964"
@@ -8,7 +17,7 @@
   video: ""
 
 - title: "FS-COCO: Towards Understanding of Freehand Sketches of Common Objects in Context"
-  authors: Pinaki Nath Chowdhury, Aneeshan Sain, Yulia Gryaditskaya, Ayan Kumar Bhunia, Tao Xiang, Yi-Zhe Song
+  authors: Pinaki Nath Chowdhury, Aneeshan Sain, Ayan Kumar Bhunia, Tao Xiang, Yulia Gryaditskaya, Yi-Zhe Song
   venue: "arXiv preprint arXiv:2203.02113"
   pdf: /assets/papers/fscoco.pdf
   url: "https://arxiv.org/abs/2203.02113"
