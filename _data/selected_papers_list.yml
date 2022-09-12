@@ -1,7 +1,7 @@
 - title: "Garment Ideation: Iterative view-aware sketch-based garment modeling"
   authors: Pinaki Nath Chowdhury, Tuanfeng Wang, Duygu Ceylan, Yi-Zhe Song, Yulia Gryaditskaya
   venue: "International Conference on 3D Vision (3DV) 2022 ORAL"
-  pdf: ""
+  pdf: /assets/papers/3DV_2022.pdf
   url: ""
   code: "https://github.com/pinakinathc/multiviewsketch-garment"
   slides: ""
