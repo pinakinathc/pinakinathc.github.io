@@ -117,6 +117,28 @@ Apart from helping capture long-range relationships among objects, GCN can help 
 ---
 ### **Transformers for Object Detection**
 
+Convolutional neural networks use local receptive field to focus on the local neighborhood of the pixels. This limits the detection performance because to achieve performance, it is often necessary to be able to capture global context. Transformers or Self-attention networks to be more specific have emerged as a recent advance to capture long range interactions among object instances. 
+
+A popular transformer-based object detection method is DETR [17] that propose a super simple (end-to-end training)  detection pipeline, effectively removing the need for many complex hand-designed components used in object detection like proposal generation, anchors, window centers, or non-maximum suppression procedure that explicitly encode prior knowledge about the task. These forms of prior knowledge can significantly influence detection performance.
+
+<img src='/lectures/images/eeem071-object-detection-10.jpg' width='100%'>
+
+DETR or DEtection TRansformer predicts all objects at once (i.e., parallel decoding), and is trained end-to-end with a set loss function which performs bipartite matching (Hungarian Loss) between predicted and ground-truth objects.
+
+DETR contains three main components: (i) a CNN backbone (ImageNet-pretrained ResNet-50) to extract a compact feature representation, (ii) an encoder-decoder transformer, and (iii) a simple feed forward network that makes the final detection prediction (class label and bounding box) or a "$$\texttt{no object}$$" class.
+
+![DETR-detailed-diagram](/lectures/images/eeem071-object-detection-11.jpg)
+
+**The Bipartite Matching Loss computed efficiently with the Hungarian Algorithm:**
+
+<img src='/lectures/images/eeem071-object-detection-12.jpg' width='50%'>
+
+<img src='/lectures/images/eeem071-object-detection-13.jpg' width='40%'>
+
+The matching loss takes into account both the class prediction and the similarity of predicted and ground truth boxes. Each element $$i$$ of the ground truth set can be seen as a $$y_{i} = (c_{i}, b_{i})$$ where $$c_{i}$$ is the target class label (which may be $$\phi$$) and $$b_{i} \in [0, 1]^{4}$$ is a vector that defined ground truth box center coordinates and its height and width relative to the image size. For the prediction with index $$\sigma(i)$$ we define probability of class $$c_{i}$$ as $$\hat{p}_{\sigma(i)}(c_{i})$$ and the predicted box as $$\hat{b}_{\sigma(i)}$$.
+
+<img src='/lectures/images/eeem071-object-detection-14.jpg' width='100%'>
+
 ---
 
 ### **A Road Map of Object Detection**
@@ -165,3 +187,5 @@ Apart from helping capture long-range relationships among objects, GCN can help 
 [15] C. Zhu, F. Chen, U. Ahmed, Z. Shen, M. Savvides. Semantic Relation Reasoning for Shot-Stable Few-Shot Object Detection. In CVPR, 2021.
 
 [16] C. Chen, J. Li, H. Y. Zhou, X. Han, Y. Huang, X. Ding, Y. Yu. Relation Matters: Foreground-aware Graph-based Relational Reasoning for Domain Adaptive Object Detection. TPAMI, 2022.
+
+[17] N. Carion, F. Massa, G. Synnaeve, N. Usunier, A. Kirillov, S. Zagoruyko. End-to-End Object Detection with Transformers. In ECCV, 2020
