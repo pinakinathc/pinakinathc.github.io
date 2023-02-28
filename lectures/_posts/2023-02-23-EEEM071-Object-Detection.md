@@ -11,7 +11,7 @@ permalink: /eeem071-object-detection/
 
 # EEEM071: Module-5 Object Detection
 
-<span style='color:red'>Updated: February 23, 2023</span>
+<span style='color:red'>Updated: February 27, 2023</span>
 
 *Hi, this is Pinaki. I prepared the following notes for an MSc. course on object detection where I am a TA. While you can read this material if it helps you, I strongly encourage you to check the references and original papers (in bibliography). I believe you should learn directly from the people making the inventions and not a third-party like me.*
 
@@ -127,21 +127,40 @@ DETR or DEtection TRansformer predicts all objects at once (i.e., parallel decod
 
 DETR contains three main components: (i) a CNN backbone (ImageNet-pretrained ResNet-50) to extract a compact feature representation, (ii) an encoder-decoder transformer, and (iii) a simple feed forward network that makes the final detection prediction (class label and bounding box) or a "$$\texttt{no object}$$" class.
 
-![DETR-detailed-diagram](/lectures/images/eeem071-object-detection-11.jpg)
+<img src='/lectures/images/eeem071-object-detection-11.jpg' width='100%'>
 
 **The Bipartite Matching Loss computed efficiently with the Hungarian Algorithm:**
 
 <img src='/lectures/images/eeem071-object-detection-12.jpg' width='50%'>
 
-<img src='/lectures/images/eeem071-object-detection-13.jpg' width='40%'>
+$$\hat{\sigma} = \arg \min_{\sigma \in \mathfrak{S}_{N}} \sum_{i}^{N} \mathcal{L}_{match}(y_{i}, \hat{y}_{\sigma(i)})$$
+
 
 The matching loss takes into account both the class prediction and the similarity of predicted and ground truth boxes. Each element $$i$$ of the ground truth set can be seen as a $$y_{i} = (c_{i}, b_{i})$$ where $$c_{i}$$ is the target class label (which may be $$\phi$$) and $$b_{i} \in [0, 1]^{4}$$ is a vector that defined ground truth box center coordinates and its height and width relative to the image size. For the prediction with index $$\sigma(i)$$ we define probability of class $$c_{i}$$ as $$\hat{p}_{\sigma(i)}(c_{i})$$ and the predicted box as $$\hat{b}_{\sigma(i)}$$.
 
-<img src='/lectures/images/eeem071-object-detection-14.jpg' width='100%'>
+$$\mathcal{L}_{Hungarian}(y, \hat{y}) = \sum_{i=1}^{N} \Big[-\log \hat{p}_{\hat{\sigma}(i)} (c_{i}) + \mathbb{1}_{c_{i} \neq \phi} \mathcal{L}_{box}(b_{i}, \hat{b}_{\hat{\sigma}}(i)) \Big]$$
+
+For a quick coding exercise of Object Detection with DETR head to the following Blog: [https://medium.com/swlh/object-detection-with-transformers-437217a3d62e](https://medium.com/swlh/object-detection-with-transformers-437217a3d62e)
+
+**Foundation Models (e.g., Vision Transformers) for Object Detection:**
+
+Foundation models like CLIP (using Vision Transformers) provide a simple and strong recipe for transferring large-scale (400 million) image-level pre-training to Open-Vocabulary (detect seen and unseen categories) Object Detection.
+
+<img src='/lectures/images/eeem071-object-detection-15.jpg' width='100%'>
+
+The above method [18] has a two-stage recipe:
+
+* Contrastively pre-train image and text encoders on large-scale image-text data (400 million).
+
+* Add detection heads and fine-tune on medium-sized detection data.
 
 ---
 
 ### **A Road Map of Object Detection**
+
+Read Z. Zou [19] survey for more insight into the last 20 years of object detection.
+
+<img src='/lectures/images/eeem071-object-detection-16.jpg' width='100%'>
 
 ---
 
@@ -189,3 +208,7 @@ The matching loss takes into account both the class prediction and the similarit
 [16] C. Chen, J. Li, H. Y. Zhou, X. Han, Y. Huang, X. Ding, Y. Yu. Relation Matters: Foreground-aware Graph-based Relational Reasoning for Domain Adaptive Object Detection. TPAMI, 2022.
 
 [17] N. Carion, F. Massa, G. Synnaeve, N. Usunier, A. Kirillov, S. Zagoruyko. End-to-End Object Detection with Transformers. In ECCV, 2020
+
+[18] M. Minderer, A. Gritsenko, A. Stone, M. Neumann, D. Weissenborn, A. Dosovitskiy, A. Mahendran, A. Arnab, M. Dehghani, Z. Shen, X. Wang, X. Zhai, T. Kipf, N. Houlsby. Simple Open-Vocabulary Object Detection with Vision Transformers. In ECCV, 2022.
+
+[19] Z. Zou, K. Chen, Z. Shi, Y. Guo, J. Ye. Object Detection in 20 Years: A Survey. arXiv:1905.05055, 2023.
