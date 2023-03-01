@@ -154,11 +154,23 @@ The above method [18] has a two-stage recipe:
 
 * Add detection heads and fine-tune on medium-sized detection data.
 
+**Recent Applications of Sketch for Fine-Grained Object Detection:**
+
+A sketch-enabled object detection framework [19] that detects based on what you sketch -- that "zebra" (e.g., one that is eating the grass) in a herd of zebras (instance-aware detection), and only the part (e.g., "head" of a "zebra") that you desire (part-aware detection).
+
+<img src='/lectures/images/eeem071-object-detection-17.jpg' width='100%'>
+
+* Such sketch-based object detection cultivates the expressiveness of human sketches for object detection.
+
+* An Object Detector that is both instance-aware and part-aware, in addition to performing category-level detection.
+
+* A novel prompt learning setup marrying CLIP and Sketch-Based Image Retrieval to build a sketch-aware detector, that works without needing bounding box annotations, class labels, and in a zero-shot manner.
+
 ---
 
 ### **A Road Map of Object Detection**
 
-Read Z. Zou [19] survey for more insight into the last 20 years of object detection.
+Read Z. Zou [20] survey for more insight into the last 20 years of object detection.
 
 <img src='/lectures/images/eeem071-object-detection-16.jpg' width='100%'>
 
@@ -211,4 +223,6 @@ Read Z. Zou [19] survey for more insight into the last 20 years of object detect
 
 [18] M. Minderer, A. Gritsenko, A. Stone, M. Neumann, D. Weissenborn, A. Dosovitskiy, A. Mahendran, A. Arnab, M. Dehghani, Z. Shen, X. Wang, X. Zhai, T. Kipf, N. Houlsby. Simple Open-Vocabulary Object Detection with Vision Transformers. In ECCV, 2022.
 
-[19] Z. Zou, K. Chen, Z. Shi, Y. Guo, J. Ye. Object Detection in 20 Years: A Survey. arXiv:1905.05055, 2023.
+[19] P. N. Chowdhury, A. K. Bhunia, A. Sain, S. Koley, T. Xiang, Y. Z. Song. What Can Human Sketches Do for Object Detection? In CVPR, 2023.
+
+[20] Z. Zou, K. Chen, Z. Shi, Y. Guo, J. Ye. Object Detection in 20 Years: A Survey. arXiv:1905.05055, 2023.
