@@ -1,5 +1,5 @@
 ---
-title: CVPR-23-What-Can-Human-Sketches-Do-for-Object-Detection?
+title: Sketch-Detect
 layout: post
 comments: true
 mathjax: true
