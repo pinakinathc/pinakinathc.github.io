@@ -1,4 +1,5 @@
 ---
+title: Oil Palm Tree Counting in Drone Images
 layout: post
 comments: true
 mathjax: true
