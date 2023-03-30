@@ -1,18 +1,45 @@
+- title: "What Can Human Sketches Do for Object Detection?"
+  authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Subhadeep Koley, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023, Top 12 Best Paper Candidates"
+  pdf: /assets/papers/CVPR2023-scenetrilogy.pdf
+  url: "https://arxiv.org/abs/2204.11964"
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "SceneTrilogy: On Scene Sketches and its Relationship with Text and Photo"
+  authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Subhadeep Koley, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
+  pdf: /assets/papers/CVPR2023-scenetrilogy.pdf
+  url: "https://arxiv.org/abs/2204.11964"
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not"
+  authors: Aneeshan Sain, Ayan Kumar Bhunia , Pinaki Nath Chowdhury, Subhadeep Koley, Tao Xiang , Yi-Zhe Song
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
+  pdf: /assets/papers/CVPR2023-CLIP.pdf
+  url: "https://arxiv.org/abs/2303.13440"
+  code: ""
+  slides: ""
+  video: ""
+
+- title: "Picture that Sketch: Photorealistic Image Generation from Abstract Sketches"
+  authors: Subhadeep Koley, Ayan Kumar Bhunia, Aneeshan Sain, Pinaki Nath Chowdhury, Tao Xiang , Yi-Zhe Song
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
+  pdf: /assets/papers/CVPR2023-StyleGAN.pdf
+  url: "https://arxiv.org/abs/2303.11162"
+  code: ""
+  slides: ""
+  video: ""
+
 - title: "Garment Ideation: Iterative view-aware sketch-based garment modeling"
   authors: Pinaki Nath Chowdhury, Tuanfeng Wang, Duygu Ceylan, Yi-Zhe Song, Yulia Gryaditskaya
   venue: "International Conference on 3D Vision (3DV) 2022 ORAL"
   pdf: /assets/papers/3DV_2022.pdf
   url: ""
   code: "https://github.com/pinakinathc/multiviewsketch-garment"
-  slides: ""
-  video: ""
-
-- title: "SceneTrilogy: On Scene Sketches and its Relationship with Text and Photo"
-  authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Tao Xiang, Yi-Zhe Song
-  venue: "arXiv preprint arXiv:2204.11964"
-  pdf: /assets/papers/scenetrilogy.pdf
-  url: "https://arxiv.org/abs/2204.11964"
-  code: ""
   slides: ""
   video: ""
 
@@ -34,38 +61,3 @@
   slides: ""
   video: "https://youtu.be/Go7ldu-NCa0"
   
-- title: "Sketching without Worrying: Noise-Tolerant Sketch-Based Image Retrieval"
-  authors: Ayan Kumar Bhunia, Subhadeep Koley, Abdullah Faiz Ur Rahman Khilji, Aneeshan Sain, Pinaki Nath Chowdhury, Tao Xiang, Yi-Zhe Song
-  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022"
-  pdf: /assets/papers/worrying.pdf
-  url: "https://arxiv.org/abs/2203.14817"
-  code: "https://github.com/AyanKumarBhunia/Stroke_Subset_Selector-for-FGSBIR"
-  slides: ""
-  video: ""
-  
-- title: "Sketch3T: Test-time Training for Zero-Shot SBIR"
-  authors: Aneeshan Sain, Ayan Kumar Bhunia, Vaishnav Potlapalli, Pinaki Nath Chowdhury, Tao Xiang, Yi-Zhe Song
-  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022"
-  pdf: /assets/papers/sketch3T.pdf
-  url: "https://arxiv.org/abs/2203.14691"
-  code: ""
-  slides: ""
-  video: ""
-
-- title: "Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation"
-  authors: Ayan Kumar Bhunia, Aneeshan Sain, Pinaki Nath Chowdhury, Yi-Zhe Song
-  venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: /assets/papers/text_is_text.pdf
-  url: "https://arxiv.org/abs/2107.12087"
-  code: ""
-  slides: ""
-  video: ""
-
-- title: "Towards the Unseen: Iterative Text Recognition by Distilling from Errors"
-  authors: Ayan Kumar Bhunia, Pinaki Nath Chowdhury, Aneeshan Sain, Yi-Zhe Song
-  venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
-  pdf: /assets/papers/iterative_text.pdf
-  url: "https://arxiv.org/abs/2107.12081"
-  code: ""
-  slides: ""
-  video: ""
