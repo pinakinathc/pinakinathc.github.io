@@ -1,0 +1,373 @@
+---
+comments: true
+mathjax: true
+author: pinaki
+permalink: /sketch-detect/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="What Can Human Sketches Do for Object Detection?">
+  <meta name="keywords" content="Sketch, Object Detection, CVPR, Best Paper Candidate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Can Human Sketches Do for Object Detection?</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="/projects/static/css/bulma.min.css">
+  <link rel="stylesheet" href="/projects/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="/projects/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="/projects/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="/projects/static/css/index.css">
+  <link rel="icon" href="/projects/static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="/projects/static/js/fontawesome.all.min.js"></script>
+  <script src="/projects/static/js/bulma-carousel.min.js"></script>
+  <script src="/projects/static/js/bulma-slider.min.js"></script>
+  <script src="/projects/static/js/index.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+{% include navigation.html %}
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">What Can Human Sketches Do for Object Detection?</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="/">Pinaki Nath Chowdhury</a>,</span>
+            <span class="author-block">
+              <a href="https://ayankumarbhunia.github.io">Ayan Kumar Bhunia</a>,</span>
+            <span class="author-block">
+              <a href="https://aneeshan95.github.io">Aneeshan Sain</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://subhadeepkoley.github.io">Subhadeep Koley</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.uk/citations?user=MeS5d4gAAAAJ&hl=en">Tao Xiang</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">Yi-Zhe Song</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">SketchX, CVSSP, University of Surrey, United Kingdom</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="/assets/papers/sketch-detect.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2303.15149"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Slides Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Slides (Coming Soon)</span>
+                  </a>
+            </div>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <h3 class="title is-5" style="color: red">
+              Selected among Top 12 <i>Best Paper</i> Award Candidates in CVPR'23 out of 9155 submissions.
+              <!-- Will be presented in special single-track plenary sessions to all attendees in Computer Vision and Pattern Recognition (CVPR), 2023</h3> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="/projects/static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<div class="content has-text-centered">
+  <img src="/projects/images/CVPR2023-Sketch-Detect-results.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+
+  <!-- <video id="replay-video"
+         controls
+         muted
+         preload
+         playsinline
+         autoplay
+         width="75%">
+    <source src="/projects/images/CVPR2023-Sketch-Detect-teaser.mp4"
+            type="video/mp4">
+  </video> -->
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Sketches are highly expressive, inherently capturing subjective
+            and fine-grained visual cues. The exploration of such
+            innate properties of human sketches has, however, been limited
+            to that of image retrieval. In this paper, for the first
+            time, we cultivate the expressiveness of sketches but for the
+            fundamental vision task of object detection. The end result
+            is a sketch-enabled object detection framework that detects
+            based on what you sketch – that “zebra” (e.g., one that is
+            eating the grass) in a herd of zebras (instance-aware detection),
+            and only the part (e.g., “head” of a “zebra”) that
+            you desire (part-aware detection). We further dictate that
+            our model works without (i) knowing which category to expect
+            at testing (zero-shot) and (ii) not requiring additional
+            bounding boxes (as per fully supervised) and class labels
+            (as per weakly supervised). Instead of devising a model
+            from the ground up, we show an intuitive synergy between
+            foundation models (e.g., CLIP) and existing sketch models
+            build for sketch-based image retrieval (SBIR), which can already
+            elegantly solve the task – CLIP to provide model generalisation,
+            and SBIR to bridge the (sketch→photo) gap.
+            In particular, we first perform independent prompting on
+            both sketch and photo branches of an SBIR model to build
+            highly generalisable sketch and photo encoders on the back
+            of the generalisation ability of CLIP. We then devise a training
+            paradigm to adapt the learned encoders for object detection,
+            such that the region embeddings of detected boxes
+            are aligned with the sketch and photo embeddings from
+            SBIR. Evaluating our framework on standard object detection
+            datasets like PASCAL-VOC and MS-COCO outperforms
+            both supervised (SOD) and weakly-supervised object
+            detectors (WSOD) on zero-shot setups.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Category-Level Object Detection. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4 columns is-centered ">Category-Level OD</h3>
+          <img src="/projects/images/CVPR2023-Sketch-Detect-categoryOD.png"
+                 class="interpolation-image"
+                 alt="Category-level Sketch-enabled Object Detection"/>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h3 class="title is-4 columns is-centered ">Fine-Grained OD</h3>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="/projects/images/CVPR2023-Sketch-Detect-fine-grained.png"
+                 class="interpolation-image"
+                 alt="Category-level Sketch-enabled Object Detection"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br/><br/>
+    <!--/ Matting. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4 columns is-centered ">Category-Level OD vs. Fine-Grained OD</h3>
+        <img src="/projects/images/CVPR2023-Sketch-Detect-category-vs-fine-grained.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+
+        <br/>
+      </div>
+    </div>
+    <br/><br/>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4 columns is-centered ">Part-Level Object Detection</h3>
+        <img src="/projects/images/CVPR2023-Sketch-Detect-part-level.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+
+        <br/>
+      </div>
+    </div>
+
+    <!--/ Animation. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{chowdhury2023sketchdetect,
+        author = {Chowdhury, Pinaki Nath and Bhunia, Ayan Kumar and Sain, Aneeshan and Koley, Subhadeep and Xiang, Tao and Song, Yi-Zhe},
+        title = {What Can Human Sketches Do for Object Detection?},
+        booktitle = {CVPR},
+        year = {2023},
+      }
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Template Credits: <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
