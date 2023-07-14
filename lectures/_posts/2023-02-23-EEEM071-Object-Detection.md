@@ -3,15 +3,15 @@ title: EEEM071 Module-5 Object Detection
 layout: post
 comments: false
 mathjax: true
+header: true
 author: pinaki
+date: February 27, 2023
 permalink: /eeem071-object-detection/
 ---
 
 <!--more-->
 
-# EEEM071: Module-5 Object Detection
-
-<span style='color:red'>Updated: February 27, 2023</span>
+<!-- <span style='color:red'>Updated: February 27, 2023</span> -->
 
 *Hi, this is Pinaki. I prepared the following notes for an MSc. course on object detection where I am a TA. While you can read this material if it helps you, I strongly encourage you to check the references and original papers (in bibliography). I believe you should learn directly from the people making the inventions and not a third-party like me.*
 
