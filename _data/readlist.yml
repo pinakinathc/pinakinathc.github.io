@@ -1,0 +1,43 @@
+venues:
+  - recent
+  - CVPR
+  - ICLR
+  - arXiv
+  - ICCV
+
+sort:
+  - name
+  - year
+  - first-author
+  - last-author
+
+paper_list:
+
+  - title: "xxxx"
+    authorlist: "xxxx"
+    first-author: "xxx"
+    last-author: "xxx"
+    venue: "xxx"
+    year: ""
+    project_page: "xxx"
+    arXiv: "xxx"
+    image_url: "xxx"
+    video_url: "xxx"
+    tags:
+      - CVPR
+      - recent
+      - arXiv
+
+  - title: "yyy"
+    authorlist: "yyy"
+    first-author: "yyy"
+    last-author: "yyy"
+    venue: "yyy"
+    year: ""
+    project_page: "yyy"
+    arXiv: "yyy"
+    image_url: "yyy"
+    video_url: "yyy"
+    tags:
+      - CVPR
+      - recent

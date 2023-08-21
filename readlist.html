@@ -1,0 +1,39 @@
+---
+title: Reading List
+layout: post
+comments: false
+mathjax: true
+header: true
+author: pinaki
+date: Aug 22nd, 2023
+permalink: /papers/
+---
+
+<b>
+  Tags:
+  {% for tags in site.data.readlist.venues %}
+    <button>{{ tags }}</button>
+  {% endfor %}
+</b>
+
+<br><br>
+
+<b>
+  Sort:
+  {% for tags in site.data.readlist.sort %}
+    <button>{{ tags }}</button>
+  {% endfor %}
+</b>
+
+<br><br>
+
+<ul>
+  {% for paper in site.data.readlist.paper_list %}
+  <li style="margin-bottom: 17px">
+    <b> {{paper.title}} </b><br>
+    {{ paper.authorlist }} <br>
+    <b> Venue: {{ paper.venue }} </b>
+    {% if paper.code != "" %} [<a href="{{ paper.code }}">Code</a>] {% endif %}
+  </li>
+  {% endfor %}
+</ul>
