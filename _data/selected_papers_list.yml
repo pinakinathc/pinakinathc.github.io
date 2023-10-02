@@ -1,3 +1,12 @@
+- title: "Democratising 2D Sketch to 3D Shape Retrieval Through Pivoting"
+  authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Subhadeep Koley, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE International Conference on Computer Vision (ICCV), 2021"
+  pdf: "https://openaccess.thecvf.com//content/ICCV2023/papers/Chowdhury_Democratising_2D_Sketch_to_3D_Shape_Retrieval_Through_Pivoting_ICCV_2023_paper.pdf"
+  url: ""
+  code: ""
+  slides: ""
+  video: "https://www.youtube.com/watch?v=iM1A81QEhfw"
+
 - title: "What Can Human Sketches Do for Object Detection?"
   authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Subhadeep Koley, Tao Xiang, Yi-Zhe Song
   venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023, Award Candidate (Best Paper Finalist, Top 12 out of 9155)"
