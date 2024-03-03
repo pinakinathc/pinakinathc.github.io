@@ -1,10 +1,11 @@
-
 ---
 layout: post
 title: "[03/03/2024] From a Centralised-Internet to a True Internet"
 comments: true
 mathjax: true
+header: true
 author: pinaki
+date: March 03, 2024
 <!-- excerpt_separator: more -->
 permalink: /internet-structure
 ---
