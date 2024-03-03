@@ -11,7 +11,7 @@ permalink: /internet-structure
 ---
 <!--more-->
 
-<h2>Topic: The internet should be a huge connection of billions of nodes; not sparse connections of giant node clusters.</h2>
+## Topic: The internet should be a huge connection of billions of nodes; not sparse connections of giant node clusters.
 
 What a time to be alive. The amount of code that is publicly available is truly a miracle and one that is potentially the biggest insurance for world peace.
 
@@ -23,10 +23,7 @@ I know the technical hurdles in scaling up web 3.0, but that only means we shoul
 
 In the coming months (and years), I will be pushing towards this direction -- starting with the following Github repository: [https://github.com/fatedier/frp](https://github.com/fatedier/frp). It is essentially "a fast reverse proxy that allows you to expose a local server located behind a NAT or firewall to the Internet".
 
-Thanks
-Pinaki
-
-Appendix:
+### Appendix:
 
 If you are confused about what I mean by web 3.0, let me use a few examples,
 
