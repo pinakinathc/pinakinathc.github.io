@@ -14,4 +14,5 @@ Maybe someday I shall develop greater insights.
 
 
 ![visualise_normalisation](/blog/images/types_of_normalisation.png)
+
 Credits: [https://arxiv.org/pdf/1803.08494](https://arxiv.org/pdf/1803.08494)
