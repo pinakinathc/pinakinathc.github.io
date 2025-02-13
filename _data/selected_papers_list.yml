@@ -1,3 +1,12 @@
+- title: "What Sketch Explainability Really Means for Downstream Tasks?"
+  authors: Hmrishav Bandyopadhyay, Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Tao Xiang, Yi-Zhe Song
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024"
+  pdf: "https://openaccess.thecvf.com/content/CVPR2024/papers/Bandyopadhyay_What_Sketch_Explainability_Really_Means_for_Downstream_Tasks_CVPR_2024_paper.pdf"
+  url: ""
+  code: ""
+  slides: ""
+  video: ""
+
 - title: "Democratising 2D Sketch to 3D Shape Retrieval Through Pivoting"
   authors: Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Aneeshan Sain, Subhadeep Koley, Tao Xiang, Yi-Zhe Song
   venue: "IEEE International Conference on Computer Vision (ICCV), 2023"
