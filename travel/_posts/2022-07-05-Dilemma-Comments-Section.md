@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[05/07/2022] The dilemma between anonymity with complete freedom of speech v/s moderation with surveillance.."
+title: "The dilemma between anonymity with complete freedom of speech v/s moderation with surveillance.."
 comments: true
 mathjax: true
 author: pinaki
