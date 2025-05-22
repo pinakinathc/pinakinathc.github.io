@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[03/03/2024] From a Centralised-Internet to a True Internet"
+title: "From a Centralised-Internet to a True Internet"
 comments: false
 mathjax: true
 header: true
