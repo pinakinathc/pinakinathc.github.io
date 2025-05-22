@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[21/05/2025] The Tax Puzzle"
+title: "The Tax Puzzle"
 comments: false
 mathjax: true
 header: true
