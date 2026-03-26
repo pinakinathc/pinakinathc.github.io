@@ -1,3 +1,234 @@
-.current {
-  color: green;
+// Adapted from CG2RealTransfer.html — warm paper background, serif body, system sans headings, teal accent.
+
+:root {
+  --bg: #faf9f7;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --accent: #0d5c4a;
+  --border: #e0ddd6;
+  --code-bg: #f0eeea;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "SF Mono", Consolas, "Liberation Mono", monospace;
+  --body-font-size: 1.125rem;
+  --page-title-size: 2.25rem;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%;
+}
+
+body.site {
+  margin: 0;
+  padding: 2.5rem clamp(1.25rem, 4vw, 3rem) 4rem;
+  font-family: var(--font-serif);
+  font-size: var(--body-font-size);
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-wrap {
+  max-width: min(96vw, 68rem);
+  margin: 0 auto;
+}
+
+// Navigation (site-wide)
+.site-nav {
+  max-width: min(96vw, 68rem);
+  margin: 0 auto 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.site-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.75rem;
+}
+
+.site-nav__link {
+  color: var(--text);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.site-nav__link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.site-nav__link--current {
+  color: var(--accent);
+  font-weight: 650;
+}
+
+.site-nav__rule {
+  display: none;
+}
+
+.current {
+  color: var(--accent);
+}
+
+// Headings — system sans like CG2RealTransfer
+body.site h1 {
+  font-family: var(--font-sans);
+  font-size: var(--page-title-size);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem 0;
+  color: var(--accent);
+}
+
+body.site h2 {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 650;
+  margin: 2rem 0 0.75rem 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+body.site h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+body.site h3 {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.35rem 0 0.5rem 0;
+  color: var(--text);
+}
+
+body.site h4,
+body.site h5,
+body.site h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--text);
+}
+
+body.site p {
+  margin: 0 0 0.85rem 0;
+}
+
+body.site ul,
+body.site ol {
+  margin: 0 0 0.85rem 0;
+  padding-left: 1.35rem;
+}
+
+body.site li {
+  margin-bottom: 0.35rem;
+}
+
+body.site strong {
+  font-weight: 650;
+}
+
+body.site hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.75rem 0;
+}
+
+body.site a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+body.site a:hover {
+  text-decoration-thickness: 2px;
+}
+
+body.site code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+}
+
+body.site pre {
+  font-family: var(--font-mono);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+  overflow-x: auto;
+  margin: 0.75rem 0 1rem 0;
+  white-space: pre;
+  /* Bootstrap sets word-break/word-wrap on pre; override so long lines scroll instead of wrapping */
+  word-wrap: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+body.site pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  white-space: pre; /* Bootstrap uses pre-wrap here; keep lines on one row + scroll parent */
+}
+
+body.site table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+body.site th,
+body.site td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.85rem;
+  vertical-align: top;
+}
+
+body.site th {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-align: left;
+  background: #f3f1ed;
+}
+
+body.site img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Bootstrap rows inside content keep working
+body.site .site-wrap .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+// Rouge / Pygments token classes (generated: rougify style github)
+@import "syntax-rouge";

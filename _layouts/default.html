@@ -1,42 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style type="text/css">
-      /* body {padding-left:1%; padding-right:1%; background-color: #ffe7b7; font-family: "Computer Modern Sans", sans-serif;;} */
-      body {padding-left:1%; padding-right:1%; font-family: "Computer Modern Sans", sans-serif; font-size: medium; background-color: #f6f6f6; text-align: justify;}
-      img {max-width:600px; max-height:600px;}
-
-    table, th, td {
-      border: 1px solid black;
-      text-align: center;
-      padding: 15px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-
-    </style>
-
   </head>
-  <body>
+  <body class="site">
     {% include navigation.html %}
-    <div class="row text-center" style="margin: 1% 1% 1% 1%;">
-      <div class='col-sm-1'></div>
-      <div class='col-sm-10', style="text-align:left;">
-        {{ content }}
-      </div>
-      <div class='col-sm-1'></div>
-      </div>
+    <div class="site-wrap">
+      {{ content }}
+    </div>
   </body>
 </html>
